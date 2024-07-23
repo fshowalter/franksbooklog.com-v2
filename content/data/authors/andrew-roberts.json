@@ -1,0 +1,28 @@
+{
+  "name": "Andrew Roberts",
+  "sortName": "Roberts, Andrew",
+  "slug": "andrew-roberts",
+  "works": [
+    {
+      "title": "Churchill",
+      "yearPublished": "2018",
+      "kind": "Nonfiction",
+      "slug": "churchill-by-andrew-roberts",
+      "sortTitle": "Churchill: Walking with Destiny",
+      "reviewed": true,
+      "grade": "A-",
+      "gradeValue": 11,
+      "authors": [
+        {
+          "slug": "andrew-roberts",
+          "notes": null,
+          "name": "Andrew Roberts",
+          "sortName": "Roberts, Andrew"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

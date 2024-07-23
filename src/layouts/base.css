@@ -1,0 +1,427 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-accent: #0056b3;
+  --bg-canvas: #f2f0e8;
+  --bg-default: #fff;
+  --bg-inverse: rgb(255 255 255 / 75%);
+  --bg-progress: #14bd41;
+  --bg-stripe: #f7f5f3;
+  --bg-subtle: #fafafa;
+  --border-accent: #054a93;
+  --border-default: #e9e7e0;
+  --fg-accent: #7c5050;
+  --fg-default: rgb(0 0 0 / 75%);
+  --fg-emphasis: rgb(0 0 0 / 95%);
+  --fg-inverse: rgb(255 255 255 / 75%);
+  --fg-muted: rgb(0 0 0 / 65%);
+  --fg-subtle: rgb(0 0 0 / 60%);
+  --gutter-width: 20px;
+  --image-filter: initial;
+  --page-margin-width: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-accent: #0056b3;
+    --bg-canvas: #484745;
+    --bg-default: #322f2f;
+    --bg-inverse: #322f2f;
+    --bg-progress: #379634;
+    --bg-stripe: #3c393a;
+    --bg-subtle: #373434;
+    --border-accent: #499ef8;
+    --border-default: #484745;
+    --fg-accent: #c86666;
+    --fg-default: rgb(255 255 255 / 75%);
+    --fg-emphasis: rgb(255 255 255 / 95%);
+    --fg-muted: rgb(255 255 255 / 65%);
+    --fg-subtle: rgb(255 255 255 / 60%);
+    --image-filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+@media screen(tablet) {
+  :root {
+    --gutter-width: 24px;
+    --page-margin-width: 48px;
+  }
+}
+
+@media screen(desktop) {
+  :root {
+    --gutter-width: 32px;
+    --page-margin-width: 64px;
+    --header-offset: 176px;
+  }
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  :root {
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Charter", "Iowan Old Style", "Georgia", "Cambria",
+      "Times New Roman", "Times", "serif";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    font-kerning: normal;
+    background-color: var(--bg-canvas);
+    color: var(--fg-default);
+  }
+
+  img {
+    filter: var(--image-filter);
+  }
+}
+
+@layer components {
+  .progress-bar-bg {
+    background-image: linear-gradient(
+      to right,
+      var(--bg-progress),
+      var(--bg-progress) var(--bar-percent),
+      transparent var(--bar-percent),
+      transparent
+    );
+    opacity: 0.33;
+  }
+
+  .rendered-markdown {
+    a {
+      text-decoration-line: underline;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    blockquote {
+      border-left: 0.5rem solid var(--border-default);
+      color: var(--fg-muted);
+      font-style: "italic";
+      margin: 24px 0;
+      padding: 0 24px;
+      position: relative;
+      quotes: "\\201C" "\\201D" "\\2018" "\\2019";
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.1;
+      margin-top: 1.5rem;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 0.25rem;
+    }
+
+    hr {
+      border: 1px solid var(--border-default);
+      margin: 39px auto 39px;
+      width: 75%;
+    }
+
+    img {
+      height: 1rem;
+      width: auto;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ol {
+      list-style-type: decimal;
+      padding-left: 1.4rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1.4rem;
+    }
+
+    li {
+      line-height: 28px;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  .select-background-image {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23054a93' height='20' width='20' viewBox='0 0 20 20' aria-hidden='true' focusable='false'><path d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'></path></svg>");
+    background-position-x: calc(100% - 8px);
+    background-position-y: 8px;
+    background-repeat: no-repeat;
+  }
+
+  .still-border {
+    border: solid 12px var(--border-default);
+    clip-path: polygon(
+      3% 0,
+      7% 1%,
+      11% 0%,
+      16% 2%,
+      20% 0,
+      23% 2%,
+      28% 2%,
+      32% 1%,
+      35% 1%,
+      39% 3%,
+      41% 1%,
+      45% 0%,
+      47% 2%,
+      50% 2%,
+      53% 0,
+      58% 2%,
+      60% 2%,
+      63% 1%,
+      65% 0%,
+      67% 2%,
+      69% 2%,
+      73% 1%,
+      76% 1%,
+      79% 0,
+      82% 1%,
+      85% 0,
+      87% 1%,
+      89% 0,
+      92% 1%,
+      96% 0,
+      98% 3%,
+      99% 3%,
+      99% 6%,
+      100% 11%,
+      98% 15%,
+      100% 21%,
+      99% 28%,
+      100% 32%,
+      99% 35%,
+      99% 40%,
+      100% 43%,
+      99% 48%,
+      100% 53%,
+      100% 57%,
+      99% 60%,
+      100% 64%,
+      100% 68%,
+      99% 72%,
+      100% 75%,
+      100% 79%,
+      99% 83%,
+      100% 86%,
+      100% 90%,
+      99% 94%,
+      99% 98%,
+      95% 99%,
+      92% 99%,
+      89% 100%,
+      86% 99%,
+      83% 100%,
+      77% 99%,
+      72% 100%,
+      66% 98%,
+      62% 100%,
+      59% 99%,
+      54% 99%,
+      49% 100%,
+      46% 98%,
+      43% 100%,
+      40% 98%,
+      38% 100%,
+      35% 99%,
+      31% 100%,
+      28% 99%,
+      25% 99%,
+      22% 100%,
+      19% 99%,
+      16% 100%,
+      13% 99%,
+      10% 99%,
+      7% 100%,
+      4% 99%,
+      2% 97%,
+      1% 97%,
+      0% 94%,
+      1% 89%,
+      0% 84%,
+      1% 81%,
+      0 76%,
+      0 71%,
+      1% 66%,
+      0% 64%,
+      0% 61%,
+      0% 59%,
+      1% 54%,
+      0% 49%,
+      1% 45%,
+      0% 40%,
+      1% 37%,
+      0% 34%,
+      1% 29%,
+      0% 23%,
+      2% 20%,
+      1% 17%,
+      1% 13%,
+      0 10%,
+      1% 6%,
+      1% 3%
+    );
+    margin-bottom: 4.57px;
+    background-color: var(--border-default);
+  }
+
+  .poster-border {
+    transform: translateZ(0);
+    border: solid 8px var(--border-default);
+    clip-path: polygon(
+      3% 0,
+      7% 1%,
+      11% 0%,
+      16% 2%,
+      20% 0,
+      23% 2%,
+      28% 2%,
+      32% 1%,
+      35% 1%,
+      39% 3%,
+      41% 1%,
+      45% 0%,
+      47% 2%,
+      50% 2%,
+      53% 0,
+      58% 2%,
+      60% 2%,
+      63% 1%,
+      65% 0%,
+      67% 2%,
+      69% 2%,
+      73% 1%,
+      76% 1%,
+      79% 0,
+      82% 1%,
+      85% 0,
+      87% 1%,
+      89% 0,
+      92% 1%,
+      96% 0,
+      98% 3%,
+      99% 3%,
+      99% 6%,
+      100% 11%,
+      98% 15%,
+      100% 21%,
+      99% 28%,
+      100% 32%,
+      99% 35%,
+      99% 40%,
+      100% 43%,
+      99% 48%,
+      100% 53%,
+      100% 57%,
+      99% 60%,
+      100% 64%,
+      100% 68%,
+      99% 72%,
+      100% 75%,
+      100% 79%,
+      99% 83%,
+      100% 86%,
+      100% 90%,
+      99% 94%,
+      99% 98%,
+      95% 99%,
+      92% 99%,
+      89% 100%,
+      86% 99%,
+      83% 100%,
+      77% 99%,
+      72% 100%,
+      66% 98%,
+      62% 100%,
+      59% 99%,
+      54% 99%,
+      49% 100%,
+      46% 98%,
+      43% 100%,
+      40% 98%,
+      38% 100%,
+      35% 99%,
+      31% 100%,
+      28% 99%,
+      25% 99%,
+      22% 100%,
+      19% 99%,
+      16% 100%,
+      13% 99%,
+      10% 99%,
+      7% 100%,
+      4% 99%,
+      2% 97%,
+      1% 97%,
+      0% 94%,
+      1% 89%,
+      0% 84%,
+      1% 81%,
+      0 76%,
+      0 71%,
+      1% 66%,
+      0% 64%,
+      0% 61%,
+      0% 59%,
+      1% 54%,
+      0% 49%,
+      1% 45%,
+      0% 40%,
+      1% 37%,
+      0% 34%,
+      1% 29%,
+      0% 23%,
+      2% 20%,
+      1% 17%,
+      1% 13%,
+      0 10%,
+      1% 6%,
+      1% 3%
+    );
+  }
+}
+
+@layer utilities {
+  .image-filter {
+    filter: var(--image-filter);
+  }
+
+  .safari-border-radius-fix {
+    transform: translateZ(0);
+  }
+
+  .items-inherit {
+    align-items: inherit;
+  }
+
+  .justify-items-inherit {
+    justify-items: inherit;
+  }
+}

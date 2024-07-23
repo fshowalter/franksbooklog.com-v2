@@ -1,0 +1,28 @@
+{
+  "name": "David Goggins",
+  "sortName": "Goggins, David",
+  "slug": "david-goggins",
+  "works": [
+    {
+      "title": "Can't Hurt Me",
+      "yearPublished": "2018",
+      "kind": "Nonfiction",
+      "slug": "cant-hurt-me-by-david-goggins",
+      "sortTitle": "Can't Hurt Me: Master Your Mind and Defy the Odds",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "david-goggins",
+          "notes": null,
+          "name": "David Goggins",
+          "sortName": "Goggins, David"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Brad Schoenfeld",
+  "sortName": "Schoenfeld, Brad",
+  "slug": "brad-schoenfeld",
+  "works": [
+    {
+      "title": "The M.A.X. Muscle Plan",
+      "yearPublished": "2012",
+      "kind": "Nonfiction",
+      "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+      "sortTitle": "The M.A.X. Muscle Plan",
+      "reviewed": true,
+      "grade": "C-",
+      "gradeValue": 5,
+      "authors": [
+        {
+          "slug": "brad-schoenfeld",
+          "notes": null,
+          "name": "Brad Schoenfeld",
+          "sortName": "Schoenfeld, Brad"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

@@ -1,0 +1,11 @@
+content/
+
+dist/
+
+.astro/
+
+public/
+
+**/fixtures/**
+
+**/__snapshots__/**

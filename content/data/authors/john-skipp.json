@@ -1,0 +1,34 @@
+{
+  "name": "John Skipp",
+  "sortName": "Skipp, John",
+  "slug": "john-skipp",
+  "works": [
+    {
+      "title": "Fright Night",
+      "yearPublished": "1985",
+      "kind": "Novel",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "sortTitle": "Fright Night",
+      "reviewed": true,
+      "grade": "F",
+      "gradeValue": 1,
+      "authors": [
+        {
+          "slug": "john-skipp",
+          "notes": null,
+          "name": "John Skipp",
+          "sortName": "Skipp, John"
+        },
+        {
+          "slug": "craig-spector",
+          "notes": null,
+          "name": "Craig Spector",
+          "sortName": "Spector, Craig"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

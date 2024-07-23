@@ -1,0 +1,39 @@
+{
+  "span": "2024",
+  "reviews": 1,
+  "readWorks": 2,
+  "books": 2,
+  "gradeDistribution": [
+    {
+      "name": "B+",
+      "count": 1
+    }
+  ],
+  "kindDistribution": [
+    {
+      "name": "Novel",
+      "count": 1
+    },
+    {
+      "name": "Nonfiction",
+      "count": 1
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Kindle",
+      "count": 1
+    },
+    {
+      "name": "Audible",
+      "count": 1
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "2020s",
+      "count": 2
+    }
+  ],
+  "mostReadAuthors": []
+}

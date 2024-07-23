@@ -1,0 +1,34 @@
+{
+  "name": "Peter Straub",
+  "sortName": "Straub, Peter",
+  "slug": "peter-straub",
+  "works": [
+    {
+      "title": "The Talisman",
+      "yearPublished": "1984",
+      "kind": "Novel",
+      "slug": "the-talisman-by-stephen-king-peter-straub",
+      "sortTitle": "Talisman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        },
+        {
+          "slug": "peter-straub",
+          "notes": null,
+          "name": "Peter Straub",
+          "sortName": "Straub, Peter"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 0,
+  "workCount": 1
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Bret Easton Ellis",
+  "sortName": "Ellis, Bret Easton",
+  "slug": "bret-easton-ellis",
+  "works": [
+    {
+      "title": "Less Than Zero",
+      "yearPublished": "1985",
+      "kind": "Novel",
+      "slug": "less-than-zero-by-bret-easton-ellis",
+      "sortTitle": "Less Than Zero",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "bret-easton-ellis",
+          "notes": null,
+          "name": "Bret Easton Ellis",
+          "sortName": "Ellis, Bret Easton"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Rules of Attraction",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+      "sortTitle": "Rules of Attraction",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "bret-easton-ellis",
+          "notes": null,
+          "name": "Bret Easton Ellis",
+          "sortName": "Ellis, Bret Easton"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 2,
+  "workCount": 2
+}

@@ -1,0 +1,13 @@
+---
+sequence: 51
+work_slug: roadside-pickup-by-richard-laymon
+edition: Kindle
+timeline:
+- date: '2023-01-21'
+  progress: Finished
+edition_notes: '<span data-work-slug="short-stories-volume-one-by-richard-laymon">_Short
+  Stories: Volume One: The Mystery and Men''s Magazines_</span>, Laymusings, 2014
+
+  '
+---
+

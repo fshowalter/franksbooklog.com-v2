@@ -1,0 +1,28 @@
+{
+  "name": "James M. Cain",
+  "sortName": "Cain, James M.",
+  "slug": "james-m-cain",
+  "works": [
+    {
+      "title": "The Postman Always Rings Twice",
+      "yearPublished": "1934",
+      "kind": "Novel",
+      "slug": "the-postman-always-rings-twice-by-james-m-cain",
+      "sortTitle": "Postman Always Rings Twice",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "james-m-cain",
+          "notes": null,
+          "name": "James M. Cain",
+          "sortName": "Cain, James M."
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

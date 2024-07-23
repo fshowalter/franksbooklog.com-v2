@@ -1,0 +1,28 @@
+{
+  "name": "Johnny Marr",
+  "sortName": "Marr, Johnny",
+  "slug": "johnny-marr",
+  "works": [
+    {
+      "title": "Set the Boy Free",
+      "yearPublished": "2016",
+      "kind": "Nonfiction",
+      "slug": "set-the-boy-free-by-johnny-marr",
+      "sortTitle": "Set the Boy Free: The Autobiography",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "johnny-marr",
+          "notes": null,
+          "name": "Johnny Marr",
+          "sortName": "Marr, Johnny"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

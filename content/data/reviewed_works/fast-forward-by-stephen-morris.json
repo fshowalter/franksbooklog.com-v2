@@ -1,0 +1,162 @@
+{
+  "sequence": 60,
+  "slug": "fast-forward-by-stephen-morris",
+  "title": "Fast Forward",
+  "subtitle": "Confessions of a Post-Punk Percussionist: Volume II",
+  "sortTitle": "Fast Forward: Confessions of a Post-Punk Percussionist: Volume II",
+  "yearPublished": "2020",
+  "grade": "A-",
+  "gradeValue": 11,
+  "kind": "Nonfiction",
+  "date": "2023-12-09",
+  "authors": [
+    {
+      "slug": "stephen-morris",
+      "notes": null,
+      "name": "Stephen Morris",
+      "sortName": "Morris, Stephen"
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 58,
+      "date": "2023-12-09",
+      "edition": "Audible",
+      "editionNotes": "Read by Stephen Morris",
+      "isAudiobook": true,
+      "abandoned": false,
+      "readingTime": 29,
+      "timeline": [
+        {
+          "date": "2023-11-11",
+          "progress": "15%"
+        },
+        {
+          "date": "2023-11-12",
+          "progress": "34%"
+        },
+        {
+          "date": "2023-11-13",
+          "progress": "43%"
+        },
+        {
+          "date": "2023-11-14",
+          "progress": "45%"
+        },
+        {
+          "date": "2023-11-15",
+          "progress": "57%"
+        },
+        {
+          "date": "2023-11-17",
+          "progress": "62%"
+        },
+        {
+          "date": "2023-11-18",
+          "progress": "68%"
+        },
+        {
+          "date": "2023-12-08",
+          "progress": "79%"
+        },
+        {
+          "date": "2023-12-09",
+          "progress": "Finished"
+        }
+      ]
+    },
+    {
+      "sequence": 60,
+      "date": "2024-07-01",
+      "edition": "Audible",
+      "editionNotes": "Read by Stephen Morris",
+      "isAudiobook": true,
+      "abandoned": false,
+      "readingTime": 4,
+      "timeline": [
+        {
+          "date": "2024-06-28",
+          "progress": "25%"
+        },
+        {
+          "date": "2024-06-29",
+          "progress": "45%"
+        },
+        {
+          "date": "2024-06-30",
+          "progress": "70%"
+        },
+        {
+          "date": "2024-07-01",
+          "progress": "Finished"
+        }
+      ]
+    }
+  ],
+  "includedInSlugs": [],
+  "yearReviewed": 2023,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    },
+    {
+      "title": "Fail-Safe",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "fail-safe-by-philip-fracassi",
+      "grade": "C",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Fight Club",
+      "kind": "Novel",
+      "yearPublished": "1996",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "grade": "A-",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night",
+      "kind": "Novel",
+      "yearPublished": "1985",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "grade": "F",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "John Skipp"
+        },
+        {
+          "name": "Craig Spector"
+        }
+      ]
+    }
+  ],
+  "includedWorks": []
+}

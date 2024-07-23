@@ -1,51 +1,55 @@
 ---
+import "./base.css";
+
+import { Layout as LayoutComponent } from "src/components/Layout";
+
 interface Props {
-	title: string;
+  title: string;
+  description: string;
+  image?: string | null;
+  article?: boolean;
 }
 
-const { title } = Astro.props;
+const siteMeta = {
+  author: "Frank Showalter",
+  url: "https://www.franksbooklog.com/",
+  image: "/assets/default_og.jpg",
+  title: "Frank's Book Log",
+};
+
+const { title, description, image, article = false } = Astro.props;
+let pageTitle;
+
+if (title.startsWith(siteMeta.title)) {
+  pageTitle = title;
+} else {
+  pageTitle = `${title} | ${siteMeta.title}`;
+}
+
+const pathname = new URL(Astro.request.url).pathname;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="description" content={description} />
+    <meta name="og:image" content={image} />
+    <meta property="og:url" content={`${siteMeta.url}${pathname}`} />
+    {article && <meta property="og:type" content="article" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <title>{pageTitle}</title>
+  </head>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+<body>
+  <LayoutComponent currentPath={pathname}>
+    <slot />
+  </LayoutComponent>
+</body>

@@ -1,0 +1,2538 @@
+{
+  "name": "Richard Laymon",
+  "sortName": "Laymon, Richard",
+  "slug": "richard-laymon",
+  "works": [
+    {
+      "title": "After Midnight",
+      "yearPublished": "1997",
+      "kind": "Novel",
+      "slug": "after-midnight-by-richard-laymon",
+      "sortTitle": "After Midnight",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Alarums",
+      "yearPublished": "1992",
+      "kind": "Novel",
+      "slug": "alarums-by-richard-laymon",
+      "sortTitle": "Alarums",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Allhallows Eve",
+      "yearPublished": "1986",
+      "kind": "Novel",
+      "slug": "allhallows-eve-by-richard-laymon",
+      "sortTitle": "Allhallows Eve",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Amara",
+      "yearPublished": "2003",
+      "kind": "Novel",
+      "slug": "amara-by-richard-laymon",
+      "sortTitle": "Amara",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Among the Missing",
+      "yearPublished": "1999",
+      "kind": "Novel",
+      "slug": "among-the-missing-by-richard-laymon",
+      "sortTitle": "Among the Missing",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Bad News",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "bad-news-by-richard-laymon",
+      "sortTitle": "Bad News",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Barney's Bigfoot Museum",
+      "yearPublished": "1981",
+      "kind": "Short Story",
+      "slug": "barneys-bigfoot-museum-by-richard-laymon",
+      "sortTitle": "Barney's Bigfoot Museum",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Beast",
+      "yearPublished": "1986",
+      "kind": "Short Story",
+      "slug": "the-beast-by-richard-laymon",
+      "sortTitle": "Beast",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Beast House",
+      "yearPublished": "1986",
+      "kind": "Novel",
+      "slug": "the-beast-house-by-richard-laymon",
+      "sortTitle": "Beast House",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Bedtime Stories",
+      "yearPublished": "2004",
+      "kind": "Short Story",
+      "slug": "bedtime-stories-by-richard-laymon",
+      "sortTitle": "Bedtime Stories",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Beginner's Luck",
+      "yearPublished": "1986",
+      "kind": "Short Story",
+      "slug": "beginners-luck-by-richard-laymon",
+      "sortTitle": "Beginner's Luck",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Beware!",
+      "yearPublished": "1985",
+      "kind": "Novel",
+      "slug": "beware-by-richard-laymon",
+      "sortTitle": "Beware!",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Bite",
+      "yearPublished": "1996",
+      "kind": "Novel",
+      "slug": "bite-by-richard-laymon",
+      "sortTitle": "Bite",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Blarney",
+      "yearPublished": "1981",
+      "kind": "Short Story",
+      "slug": "blarney-by-richard-laymon",
+      "sortTitle": "Blarney",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Bleeder",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "the-bleeder-by-richard-laymon",
+      "sortTitle": "Bleeder",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Blood Games",
+      "yearPublished": "1992",
+      "kind": "Novel",
+      "slug": "blood-games-by-richard-laymon",
+      "sortTitle": "Blood Games",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Body Rides",
+      "yearPublished": "1996",
+      "kind": "Novel",
+      "slug": "body-rides-by-richard-laymon",
+      "sortTitle": "Body Rides",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Boo",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "boo-by-richard-laymon",
+      "sortTitle": "Boo",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Boy Who Loved \"The Twilight Zone\"",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "the-boy-who-loved-the-twilight-zone-by-richard-laymon",
+      "sortTitle": "Boy Who Loved \"The Twilight Zone\"",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Cabin in the Woods",
+      "yearPublished": "2002",
+      "kind": "Short Story",
+      "slug": "the-cabin-in-the-woods-by-richard-laymon",
+      "sortTitle": "Cabin in the Woods",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Caller",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "the-caller-by-richard-laymon",
+      "sortTitle": "Caller",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Cardiac Arrest",
+      "yearPublished": "1984",
+      "kind": "Short Story",
+      "slug": "cardiac-arrest-by-richard-laymon",
+      "sortTitle": "Cardiac Arrest",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Cellar",
+      "yearPublished": "1980",
+      "kind": "Novel",
+      "slug": "the-cellar-by-richard-laymon",
+      "sortTitle": "Cellar, The",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Champion",
+      "yearPublished": "1978",
+      "kind": "Short Story",
+      "slug": "the-champion-by-richard-laymon",
+      "sortTitle": "Champion",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Choppie",
+      "yearPublished": "1999",
+      "kind": "Short Story",
+      "slug": "choppie-by-richard-laymon",
+      "sortTitle": "Choppie",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Cobra",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "the-cobra-by-richard-laymon",
+      "sortTitle": "Cobra",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Come Out Tonight",
+      "yearPublished": "1998",
+      "kind": "Novel",
+      "slug": "come-out-tonight-by-richard-laymon",
+      "sortTitle": "Come Out Tonight",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Cut",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "cut-by-richard-laymon",
+      "sortTitle": "Cut",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Cuts",
+      "yearPublished": "1999",
+      "kind": "Novel",
+      "slug": "cuts-by-richard-laymon",
+      "sortTitle": "Cuts",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Darkness, Tell Us",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "darkness-tell-us-by-richard-laymon",
+      "sortTitle": "Darkness, Tell Us",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Dawson's City",
+      "yearPublished": "1984",
+      "kind": "Short Story",
+      "slug": "dawsons-city-by-richard-laymon",
+      "sortTitle": "Dawson's City",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Desert Pickup",
+      "yearPublished": "1970",
+      "kind": "Short Story",
+      "slug": "desert-pickup-by-richard-laymon",
+      "sortTitle": "Desert Pickup",
+      "reviewed": true,
+      "grade": "C-",
+      "gradeValue": 5,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Dinker's Pond",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "dinkers-pond-by-richard-laymon",
+      "sortTitle": "Dinker's Pond",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Direct Approach",
+      "yearPublished": "1977",
+      "kind": "Short Story",
+      "slug": "the-direct-approach-by-richard-laymon",
+      "sortTitle": "Direct Approach",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Diving Girl",
+      "yearPublished": "2005",
+      "kind": "Short Story",
+      "slug": "the-diving-girl-by-richard-laymon",
+      "sortTitle": "Diving Girl",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Double Date",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "double-date-by-richard-laymon",
+      "sortTitle": "Double Date",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Dracuson's Driver",
+      "yearPublished": "1992",
+      "kind": "Short Story",
+      "slug": "dracusons-driver-by-richard-laymon",
+      "sortTitle": "Dracuson's Driver",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Eats",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "eats-by-richard-laymon",
+      "sortTitle": "Eats",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Endless Night",
+      "yearPublished": "1993",
+      "kind": "Novel",
+      "slug": "endless-night-by-richard-laymon",
+      "sortTitle": "Endless Night",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Fiends",
+      "yearPublished": "1997",
+      "kind": "Novella",
+      "slug": "fiends-by-richard-laymon",
+      "sortTitle": "Fiends",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Finders Keepers",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "finders-keepers-by-richard-laymon",
+      "sortTitle": "Finders Keepers",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "First Date",
+      "yearPublished": "1997",
+      "kind": "Short Story",
+      "slug": "first-date-by-richard-laymon",
+      "sortTitle": "First Date",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Flesh",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "flesh-by-richard-laymon",
+      "sortTitle": "Flesh",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Friday Night in Beast House",
+      "yearPublished": "2001",
+      "kind": "Novel",
+      "slug": "friday-night-in-beast-house-by-richard-laymon",
+      "sortTitle": "Friday Night in Beast House",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Funland",
+      "yearPublished": "1989",
+      "kind": "Novel",
+      "slug": "funland-by-richard-laymon",
+      "sortTitle": "Funland",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Fur Coat",
+      "yearPublished": "1994",
+      "kind": "Short Story",
+      "slug": "the-fur-coat-by-richard-laymon",
+      "sortTitle": "Fur Coat",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Glory Bus",
+      "yearPublished": "2005",
+      "kind": "Novel",
+      "slug": "the-glory-bus-by-richard-laymon",
+      "sortTitle": "Glory Bus",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "A Good Cigar is a Smoke",
+      "yearPublished": "1976",
+      "kind": "Short Story",
+      "slug": "a-good-cigar-is-a-smoke-by-richard-laymon",
+      "sortTitle": "Good Cigar is a Smoke",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Good Deed",
+      "yearPublished": "1992",
+      "kind": "Novella",
+      "slug": "the-good-deed-by-richard-laymon",
+      "sortTitle": "Good Deed",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Good Vibrations",
+      "yearPublished": "1996",
+      "kind": "Short Story",
+      "slug": "good-vibrations-by-richard-laymon",
+      "sortTitle": "Good Vibrations",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "A Good, Secret Place",
+      "yearPublished": "1992",
+      "kind": "Novella",
+      "slug": "a-good-secret-place-by-richard-laymon",
+      "sortTitle": "Good, Secret Place",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Grab",
+      "yearPublished": "1982",
+      "kind": "Short Story",
+      "slug": "the-grab-by-richard-laymon",
+      "sortTitle": "Grab",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Guts",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "guts-by-richard-laymon",
+      "sortTitle": "Guts",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Halloween Hunt",
+      "yearPublished": "1987",
+      "kind": "Novella",
+      "slug": "halloween-hunt-by-richard-laymon",
+      "sortTitle": "Halloween Hunt",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Hammerhead",
+      "yearPublished": "2001",
+      "kind": "Short Story",
+      "slug": "hammerhead-by-richard-laymon",
+      "sortTitle": "Hammerhead",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Hangman",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "the-hangman-by-richard-laymon",
+      "sortTitle": "Hangman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Hearse",
+      "yearPublished": "2004",
+      "kind": "Novella",
+      "slug": "the-hearse-by-richard-laymon",
+      "sortTitle": "Hearse",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Herman",
+      "yearPublished": "1996",
+      "kind": "Short Story",
+      "slug": "herman-by-richard-laymon",
+      "sortTitle": "Herman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Hunt",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "the-hunt-by-richard-laymon",
+      "sortTitle": "Hunt",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Hunted",
+      "yearPublished": "1997",
+      "kind": "Short Story",
+      "slug": "the-hunted-by-richard-laymon",
+      "sortTitle": "Hunted",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "I'm Not a Criminal",
+      "yearPublished": "1993",
+      "kind": "Short Story",
+      "slug": "im-not-a-criminal-by-richard-laymon",
+      "sortTitle": "I'm Not a Criminal",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Immediate Opening",
+      "yearPublished": "1976",
+      "kind": "Short Story",
+      "slug": "immediate-opening-by-richard-laymon",
+      "sortTitle": "Immediate Opening",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "In the Dark",
+      "yearPublished": "1994",
+      "kind": "Novel",
+      "slug": "in-the-dark-by-richard-laymon",
+      "sortTitle": "In the Dark",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Into the Pit",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "into-the-pit-by-richard-laymon",
+      "sortTitle": "Into the Pit",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Intruder",
+      "yearPublished": "1984",
+      "kind": "Short Story",
+      "slug": "the-intruder-by-richard-laymon",
+      "sortTitle": "Intruder",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Invitation to Murder",
+      "yearPublished": "1991",
+      "kind": "Short Story",
+      "slug": "invitation-to-murder-by-richard-laymon",
+      "sortTitle": "Invitation to Murder",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Island",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "island-by-richard-laymon",
+      "sortTitle": "Island",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Job",
+      "yearPublished": "1998",
+      "kind": "Short Story",
+      "slug": "the-job-by-richard-laymon",
+      "sortTitle": "Job",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Joyce",
+      "yearPublished": "1992",
+      "kind": "Short Story",
+      "slug": "joyce-by-richard-laymon",
+      "sortTitle": "Joyce",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Kitty Litter",
+      "yearPublished": "1992",
+      "kind": "Short Story",
+      "slug": "kitty-litter-by-richard-laymon",
+      "sortTitle": "Kitty Litter",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Lake",
+      "yearPublished": "2004",
+      "kind": "Novel",
+      "slug": "the-lake-by-richard-laymon",
+      "sortTitle": "Lake",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Last Hand",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "the-last-hand-by-richard-laymon",
+      "sortTitle": "Last Hand",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Lawmen",
+      "yearPublished": "1983",
+      "kind": "Novel",
+      "slug": "the-lawmen-by-richard-laymon",
+      "sortTitle": "Lawmen",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Lee Davis Willoughby",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Live Bait",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "live-bait-by-richard-laymon",
+      "sortTitle": "Live Bait",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Living Dead",
+      "yearPublished": "2006",
+      "kind": "Short Story",
+      "slug": "the-living-dead-by-richard-laymon",
+      "sortTitle": "Living Dead",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Lonely One",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "the-lonely-one-by-richard-laymon",
+      "sortTitle": "Lonely One",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Madman Stan",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "madman-stan-by-richard-laymon",
+      "sortTitle": "Madman Stan",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Maiden",
+      "yearPublished": "1995",
+      "kind": "Short Story",
+      "slug": "the-maiden-by-richard-laymon",
+      "sortTitle": "Maiden",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Marathon",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "marathon-by-richard-laymon",
+      "sortTitle": "Marathon",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Mask",
+      "yearPublished": "1992",
+      "kind": "Novella",
+      "slug": "the-mask-by-richard-laymon",
+      "sortTitle": "Mask",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Mess Hall",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "mess-hall-by-richard-laymon",
+      "sortTitle": "Mess Hall",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Midnight Tour",
+      "yearPublished": "1998",
+      "kind": "Novel",
+      "slug": "the-midnight-tour-by-richard-laymon",
+      "sortTitle": "Midnight Tour",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Midnight's Lair",
+      "yearPublished": "1988",
+      "kind": "Novel",
+      "slug": "midnights-lair-by-richard-laymon",
+      "sortTitle": "Midnight's Lair",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Richard Kelly",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Mirror",
+      "yearPublished": "2011",
+      "kind": "Short Story",
+      "slug": "the-mirror-by-richard-laymon",
+      "sortTitle": "Mirror",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Mop-Up",
+      "yearPublished": "1989",
+      "kind": "Novella",
+      "slug": "mop-up-by-richard-laymon",
+      "sortTitle": "Mop-Up",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Night Creature",
+      "yearPublished": "1986",
+      "kind": "Short Story",
+      "slug": "the-night-creature-by-richard-laymon",
+      "sortTitle": "Night Creature",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Night Games",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "night-games-by-richard-laymon",
+      "sortTitle": "Night Games",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Night Ride",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "night-ride-by-richard-laymon",
+      "sortTitle": "Night Ride",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Night Show",
+      "yearPublished": "1984",
+      "kind": "Novel",
+      "slug": "night-show-by-richard-laymon",
+      "sortTitle": "Night Show",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Night in the Lonesome October",
+      "yearPublished": "2001",
+      "kind": "Novel",
+      "slug": "night-in-the-lonesome-october-by-richard-laymon",
+      "sortTitle": "Night in the Lonesome October",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Nightmare Lake",
+      "yearPublished": "1983",
+      "kind": "Novel",
+      "slug": "nightmare-lake-by-richard-laymon",
+      "sortTitle": "Nightmare Lake",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Carl Laymon",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "No Sanctuary",
+      "yearPublished": "2001",
+      "kind": "Novel",
+      "slug": "no-sanctuary-by-richard-laymon",
+      "sortTitle": "No Sanctuary",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Once Upon a Halloween",
+      "yearPublished": "2000",
+      "kind": "Novel",
+      "slug": "once-upon-a-halloween-by-richard-laymon",
+      "sortTitle": "Once Upon a Halloween",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "One Rainy Night",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "one-rainy-night-by-richard-laymon",
+      "sortTitle": "One Rainy Night",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Oscar's Audition",
+      "yearPublished": "1975",
+      "kind": "Short Story",
+      "slug": "oscars-audition-by-richard-laymon",
+      "sortTitle": "Oscar's Audition",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Dick Kelly",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Out Are the Lights",
+      "yearPublished": "1982",
+      "kind": "Novel",
+      "slug": "out-are-the-lights-by-richard-laymon",
+      "sortTitle": "Out Are the Lights",
+      "reviewed": true,
+      "grade": "C-",
+      "gradeValue": 5,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Out Are the Lights and Other Tales",
+      "yearPublished": "1993",
+      "kind": "Collection",
+      "slug": "out-are-the-lights-and-other-tales-by-richard-laymon",
+      "sortTitle": "Out Are the Lights and Other Tales",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Out of the Woods",
+      "yearPublished": "1975",
+      "kind": "Short Story",
+      "slug": "out-of-the-woods-by-richard-laymon",
+      "sortTitle": "Out of the Woods",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Paying Joe Back",
+      "yearPublished": "1975",
+      "kind": "Short Story",
+      "slug": "paying-joe-back-by-richard-laymon",
+      "sortTitle": "Paying Joe Back",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Phil the Vampire",
+      "yearPublished": "1995",
+      "kind": "Short Story",
+      "slug": "phil-the-vampire-by-richard-laymon",
+      "sortTitle": "Phil the Vampire",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Pick-Up on Highway One",
+      "yearPublished": "2001",
+      "kind": "Short Story",
+      "slug": "pick-up-on-highway-one-by-richard-laymon",
+      "sortTitle": "Pick-Up on Highway One",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Prudence",
+      "yearPublished": "2000",
+      "kind": "Short Story",
+      "slug": "prudence-by-richard-laymon",
+      "sortTitle": "Prudence",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Quake",
+      "yearPublished": "1995",
+      "kind": "Novel",
+      "slug": "quake-by-richard-laymon",
+      "sortTitle": "Quake",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Resurrection Dreams",
+      "yearPublished": "1988",
+      "kind": "Novel",
+      "slug": "resurrection-dreams-by-richard-laymon",
+      "sortTitle": "Resurrection Dreams",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Return",
+      "yearPublished": "1986",
+      "kind": "Short Story",
+      "slug": "the-return-by-richard-laymon",
+      "sortTitle": "Return",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Roadside Pickup",
+      "yearPublished": "1974",
+      "kind": "Short Story",
+      "slug": "roadside-pickup-by-richard-laymon",
+      "sortTitle": "Roadside Pickup",
+      "reviewed": true,
+      "grade": "C-",
+      "gradeValue": 5,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "Savage",
+      "yearPublished": "1993",
+      "kind": "Novel",
+      "slug": "savage-by-richard-laymon",
+      "sortTitle": "Savage: From Whitechapel to the Wild West on the Track of Jack the Ripper",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Saving Grace",
+      "yearPublished": "1991",
+      "kind": "Short Story",
+      "slug": "saving-grace-by-richard-laymon",
+      "sortTitle": "Saving Grace",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Shootout at Joe's",
+      "yearPublished": "1984",
+      "kind": "Short Story",
+      "slug": "shootout-at-joes-by-richard-laymon",
+      "sortTitle": "Shootout at Joe's",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Short Stories: Volume One",
+      "yearPublished": "2014",
+      "kind": "Collection",
+      "slug": "short-stories-volume-one-by-richard-laymon",
+      "sortTitle": "Short Stories: Volume One: The Mystery and Men's Magazines",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Slit",
+      "yearPublished": "1993",
+      "kind": "Short Story",
+      "slug": "slit-by-richard-laymon",
+      "sortTitle": "Slit",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Special",
+      "yearPublished": "1991",
+      "kind": "Short Story",
+      "slug": "special-by-richard-laymon",
+      "sortTitle": "Special",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Spooked",
+      "yearPublished": "1981",
+      "kind": "Short Story",
+      "slug": "spooked-by-richard-laymon",
+      "sortTitle": "Spooked",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Stake",
+      "yearPublished": "1990",
+      "kind": "Novel",
+      "slug": "the-stake-by-richard-laymon",
+      "sortTitle": "Stake",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Stickman",
+      "yearPublished": "1992",
+      "kind": "Short Story",
+      "slug": "stickman-by-richard-laymon",
+      "sortTitle": "Stickman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Stiff Intruders",
+      "yearPublished": "1980",
+      "kind": "Short Story",
+      "slug": "stiff-intruders-by-richard-laymon",
+      "sortTitle": "Stiff Intruders",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "A Stranger's Arms",
+      "yearPublished": "1984",
+      "kind": "Novel",
+      "slug": "a-strangers-arms-by-richard-laymon",
+      "sortTitle": "Stranger's Arms",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Carla Laymon",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Tell Me a Tale",
+      "yearPublished": "2001",
+      "kind": "Short Story",
+      "slug": "tell-me-a-tale-by-richard-laymon",
+      "sortTitle": "Tell Me a Tale",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Ten Bucks Says You Won't",
+      "yearPublished": "2002",
+      "kind": "Short Story",
+      "slug": "ten-bucks-says-you-wont-by-richard-laymon",
+      "sortTitle": "Ten Bucks Says You Won't",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Thin Air",
+      "yearPublished": "1986",
+      "kind": "Short Story",
+      "slug": "thin-air-by-richard-laymon",
+      "sortTitle": "Thin Air",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Trap",
+      "yearPublished": "1985",
+      "kind": "Short Story",
+      "slug": "the-trap-by-richard-laymon",
+      "sortTitle": "Trap",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Traveling Vampire Show",
+      "yearPublished": "2000",
+      "kind": "Novel",
+      "slug": "the-traveling-vampire-show-by-richard-laymon",
+      "sortTitle": "Traveling Vampire Show",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Tread Softly",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "tread-softly-by-richard-laymon",
+      "sortTitle": "Tread Softly",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Richard Kelly",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Triage",
+      "yearPublished": "2001",
+      "kind": "Novella",
+      "slug": "triage-by-richard-laymon",
+      "sortTitle": "Triage",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Tub",
+      "yearPublished": "1991",
+      "kind": "Short Story",
+      "slug": "the-tub-by-richard-laymon",
+      "sortTitle": "Tub",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": [
+        "out-are-the-lights-and-other-tales-by-richard-laymon"
+      ]
+    },
+    {
+      "title": "The Wilds",
+      "yearPublished": "1998",
+      "kind": "Novella",
+      "slug": "the-wilds-by-richard-laymon",
+      "sortTitle": "Wilds",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Wishbone",
+      "yearPublished": "1989",
+      "kind": "Short Story",
+      "slug": "wishbone-by-richard-laymon",
+      "sortTitle": "Wishbone",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Woods Are Dark",
+      "yearPublished": "1981",
+      "kind": "Novel",
+      "slug": "the-woods-are-dark-by-richard-laymon",
+      "sortTitle": "Woods Are Dark",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Worshipper",
+      "yearPublished": "2004",
+      "kind": "Short Story",
+      "slug": "the-worshipper-by-richard-laymon",
+      "sortTitle": "Worshipper",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "A Writer's Tale",
+      "yearPublished": "1997",
+      "kind": "Nonfiction",
+      "slug": "a-writers-tale-by-richard-laymon",
+      "sortTitle": "Writer's Tale",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": null,
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Your Secret Admirer",
+      "yearPublished": "1980",
+      "kind": "Novel",
+      "slug": "your-secret-admirer-by-richard-laymon",
+      "sortTitle": "Your Secret Admirer",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "richard-laymon",
+          "notes": "as Carl Laymon",
+          "name": "Richard Laymon",
+          "sortName": "Laymon, Richard"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 5,
+  "workCount": 131
+}

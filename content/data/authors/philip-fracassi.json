@@ -1,0 +1,274 @@
+{
+  "name": "Philip Fracassi",
+  "sortName": "Fracassi, Philip",
+  "slug": "philip-fracassi",
+  "works": [
+    {
+      "title": "Altar",
+      "yearPublished": "2016",
+      "kind": "Short Story",
+      "slug": "altar-by-philip-fracassi",
+      "sortTitle": "Altar",
+      "reviewed": true,
+      "grade": "A-",
+      "gradeValue": 11,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "The Baby Farmer",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "the-baby-farmer-by-philip-fracassi",
+      "sortTitle": "Baby Farmer",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Behold the Void",
+      "yearPublished": "2017",
+      "kind": "Collection",
+      "slug": "behold-the-void-by-philip-fracassi",
+      "sortTitle": "Behold the Void",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Coffin",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "coffin-by-philip-fracassi",
+      "sortTitle": "Coffin",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Don't Let Them Get You Down",
+      "yearPublished": "2022",
+      "kind": "Novel",
+      "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+      "sortTitle": "Don't Let Them Get You Down",
+      "reviewed": true,
+      "grade": "C-",
+      "gradeValue": 5,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Fail-Safe",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "fail-safe-by-philip-fracassi",
+      "sortTitle": "Fail-Safe",
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Gothic",
+      "yearPublished": "2023",
+      "kind": "Novel",
+      "slug": "gothic-by-philip-fracassi",
+      "sortTitle": "Gothic",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Horse Thief",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "the-horse-thief-by-philip-fracassi",
+      "sortTitle": "Horse Thief",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Mandala",
+      "yearPublished": "2017",
+      "kind": "Novella",
+      "slug": "mandala-by-philip-fracassi",
+      "sortTitle": "Mandala",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Mother",
+      "yearPublished": "2015",
+      "kind": "Short Story",
+      "slug": "mother-by-philip-fracassi",
+      "sortTitle": "Mother",
+      "reviewed": true,
+      "grade": "B-",
+      "gradeValue": 8,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Sacculina",
+      "yearPublished": "2017",
+      "kind": "Novella",
+      "slug": "sacculina-by-philip-fracassi",
+      "sortTitle": "Sacculina",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Soft Construction of a Sunset",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+      "sortTitle": "Soft Construction of a Sunset",
+      "reviewed": true,
+      "grade": "B-",
+      "gradeValue": 8,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    },
+    {
+      "title": "Surfer Girl",
+      "yearPublished": "2017",
+      "kind": "Short Story",
+      "slug": "surfer-girl-by-philip-fracassi",
+      "sortTitle": "Surfer Girl",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ]
+    }
+  ],
+  "reviewedWorkCount": 13,
+  "workCount": 13
+}

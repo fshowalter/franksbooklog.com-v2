@@ -1,0 +1,28 @@
+{
+  "name": "Conner Habib",
+  "sortName": "Habib, Conner",
+  "slug": "conner-habib",
+  "works": [
+    {
+      "title": "Hawk Mountain",
+      "yearPublished": "2022",
+      "kind": "Novel",
+      "slug": "hawk-mountain-by-conner-habib",
+      "sortTitle": "Hawk Mountain",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "conner-habib",
+          "notes": null,
+          "name": "Conner Habib",
+          "sortName": "Habib, Conner"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

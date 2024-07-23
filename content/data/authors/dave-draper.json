@@ -1,0 +1,28 @@
+{
+  "name": "Dave Draper",
+  "sortName": "Draper, Dave",
+  "slug": "dave-draper",
+  "works": [
+    {
+      "title": "Brother Iron, Sister Steel",
+      "yearPublished": "2001",
+      "kind": "Nonfiction",
+      "slug": "brother-iron-sister-steel-by-dave-draper",
+      "sortTitle": "Brother Iron, Sister Steel",
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
+      "authors": [
+        {
+          "slug": "dave-draper",
+          "notes": null,
+          "name": "Dave Draper",
+          "sortName": "Draper, Dave"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1
+}

@@ -1,0 +1,161 @@
+{
+  "name": "Chuck Palahniuk",
+  "sortName": "Palahniuk, Chuck",
+  "slug": "chuck-palahniuk",
+  "works": [
+    {
+      "title": "Choke",
+      "yearPublished": "2001",
+      "kind": "Novel",
+      "slug": "choke-by-chuck-palahniuk",
+      "sortTitle": "Choke",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Consider This",
+      "yearPublished": "2020",
+      "kind": "Nonfiction",
+      "slug": "consider-this-by-chuck-palahniuk",
+      "sortTitle": "Consider This: Moments in My Writing Life After Which Everything Was Different",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Diary",
+      "yearPublished": "2003",
+      "kind": "Novel",
+      "slug": "diary-by-chuck-palahniuk",
+      "sortTitle": "Diary",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Fight Club",
+      "yearPublished": "1996",
+      "kind": "Novel",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "sortTitle": "Fight Club",
+      "reviewed": true,
+      "grade": "A-",
+      "gradeValue": 11,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Invisible Monsters",
+      "yearPublished": "1999",
+      "kind": "Novel",
+      "slug": "invisible-monsters-by-chuck-palahniuk",
+      "sortTitle": "Invisible Monsters",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Lullaby",
+      "yearPublished": "2002",
+      "kind": "Novel",
+      "slug": "lullaby-by-chuck-palahniuk",
+      "sortTitle": "Lullaby",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Stranger than Fiction",
+      "yearPublished": "2004",
+      "kind": "Nonfiction",
+      "slug": "stranger-than-fiction-by-chuck-palahniuk",
+      "sortTitle": "Stranger than Fiction: True Stories",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Survivor",
+      "yearPublished": "1999",
+      "kind": "Novel",
+      "slug": "survivor-by-chuck-palahniuk",
+      "sortTitle": "Survivor",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "chuck-palahniuk",
+          "notes": null,
+          "name": "Chuck Palahniuk",
+          "sortName": "Palahniuk, Chuck"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 2,
+  "workCount": 8
+}
