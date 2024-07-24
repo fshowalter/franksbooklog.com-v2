@@ -2,7 +2,7 @@ import { getCovers } from "src/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "src/api/reviews";
 
 import type { Props } from "./Home";
-import { CoverImageConfig } from "./ListItem";
+import { CoverImageConfig } from "./HomeListItem";
 
 export async function getProps(): Promise<Props> {
   const works = await mostRecentReviews(10);
@@ -13,7 +13,7 @@ export async function getProps(): Promise<Props> {
     }),
   );
 
-  const covers = await getCovers(CoverImageConfig);
+  const covers = await getCovers({ works: values, ...CoverImageConfig });
 
   return {
     values,

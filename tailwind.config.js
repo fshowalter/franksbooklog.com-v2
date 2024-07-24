@@ -1,4 +1,4 @@
-const STILL_WIDTH = "960px";
+const BACKDROP_WIDTH = "960px";
 const PROSE_CONTENT_WIDTH = "36rem";
 const POSTER_WIDTH = "200px";
 import plugin from "tailwindcss/plugin";
@@ -32,8 +32,7 @@ export default {
     },
     screens: {
       tablet: "510px",
-      desktop: "1024px",
-      max: "1294px",
+      desktop: "1112px",
     },
     extend: {
       boxShadow: {
@@ -63,7 +62,7 @@ export default {
         gutter: "var(--gutter-width)",
       },
       maxWidth: {
-        canvas: `clamp(${STILL_WIDTH}, 95vw, 1472px)`,
+        canvas: `clamp(${BACKDROP_WIDTH}, 95vw, 1112px)`,
         prose: PROSE_CONTENT_WIDTH,
         popout: `calc((var(--gutter-width) * 2) + ${PROSE_CONTENT_WIDTH})`,
         poster: POSTER_WIDTH,

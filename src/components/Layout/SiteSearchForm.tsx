@@ -5,7 +5,7 @@ export function SiteSearchForm() {
       acceptCharset="UTF-8"
       method="get"
       role="search"
-      className="w-full max-w-prose overflow-hidden rounded shadow-all"
+      className="mx-auto w-full max-w-[512px] overflow-hidden rounded shadow-all"
     >
       <label htmlFor="search" className="flex overflow-hidden">
         <span className="sr-only">Search</span>

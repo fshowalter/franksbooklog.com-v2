@@ -1,5 +1,3 @@
-import { basename, extname } from "node:path";
-
 import { getImage } from "astro:assets";
 
 import { normalizeSources } from "./utils/normalizeSources";
@@ -9,7 +7,13 @@ export interface CoverImageData {
   srcSet: string;
 }
 
+interface Work {
+  slug: string;
+  includedInSlugs: string[];
+}
+
 interface Props {
+  works: Work[];
   width: number;
   height: number;
 }
@@ -18,26 +22,41 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
 
-const cache: Record<string, Record<string, CoverImageData>> = {};
+function parentCoverForWork(work: Work) {
+  let parentCover;
+
+  work.includedInSlugs.find((slug) => {
+    parentCover = Object.keys(images).find((image) => {
+      return image.endsWith(`${slug}.png`);
+    });
+
+    return parentCover;
+  });
+
+  return parentCover;
+}
 
 export async function getCovers({
+  works,
   width,
   height,
 }: Props): Promise<Record<string, CoverImageData>> {
-  const key = width.toString();
-
-  if (key in cache) {
-    return cache[key];
-  }
-
   const imageMap: Record<string, CoverImageData> = {};
 
   await Promise.all(
-    Object.keys(images).map(async (image) => {
-      const coverFile = await images[image]();
+    works.map(async (work) => {
+      let workCoverPath = Object.keys(images).find((image) => {
+        return image.endsWith(`${work.slug}.png`);
+      });
+
+      if (!workCoverPath) {
+        workCoverPath = parentCoverForWork(work)!;
+      }
+
+      const workCoverFile = await images[workCoverPath]();
 
       const optimizedImage = await getImage({
-        src: coverFile.default,
+        src: workCoverFile.default,
         width: width,
         height: height,
         format: "avif",
@@ -45,14 +64,12 @@ export async function getCovers({
         quality: 80,
       });
 
-      imageMap[basename(image, extname(image))] = {
+      imageMap[work.slug] = {
         srcSet: normalizeSources(optimizedImage.srcSet.attribute),
         src: normalizeSources(optimizedImage.src),
       };
     }),
   );
-
-  cache[key] = imageMap;
 
   return imageMap;
 }

@@ -177,7 +177,7 @@
   }
 
   .cover-border {
-    border: solid 12px var(--border-default);
+    border: solid 8px var(--border-default);
     clip-path: polygon(
       3% 0,
       7% 1%,
