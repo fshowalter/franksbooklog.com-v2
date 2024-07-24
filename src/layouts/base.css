@@ -176,7 +176,7 @@
     background-repeat: no-repeat;
   }
 
-  .still-border {
+  .cover-border {
     border: solid 12px var(--border-default);
     clip-path: polygon(
       3% 0,
@@ -288,7 +288,6 @@
       1% 6%,
       1% 3%
     );
-    margin-bottom: 4.57px;
     background-color: var(--border-default);
   }
 

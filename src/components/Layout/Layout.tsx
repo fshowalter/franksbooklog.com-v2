@@ -18,11 +18,11 @@ export function Layout({
       </a>
       <div
         className={
-          "image-filter mx-auto min-h-4 w-full max-w-[clamp(960px,95vw,1248px)] bg-[url('/assets/ripnotcomingsoon.avif')] desktop:sticky desktop:top-0 desktop:z-40"
+          "image-filter mx-auto min-h-4 w-full max-w-[clamp(960px,95vw,1232px)] bg-[url('/assets/ripnotcomingsoon.avif')] desktop:sticky desktop:top-0 desktop:z-40"
         }
       />
 
-      <div className="mx-auto flex min-h-full max-w-[clamp(960px,95vw,1248px)] flex-col bg-default">
+      <div className="mx-auto flex min-h-full max-w-[clamp(960px,95vw,1232px)] flex-col bg-default">
         <Mast currentPath={currentPath} />
         <div className="grow" id="content">
           {children}
