@@ -1,12 +1,7 @@
-/**
- * Takes an array of words and returns a new array that includes (if needed) commas and a conjunction.
- * @param array The array to parse.
- */
-
 export function toSentenceArray<T extends string | JSX.Element>(
-  array: readonly T[],
+  values: readonly T[],
 ): T[] {
-  const words = array.filter(Boolean);
+  const words = values.filter(Boolean);
 
   if (words.length < 2) {
     return words;

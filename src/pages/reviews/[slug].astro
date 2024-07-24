@@ -1,0 +1,41 @@
+---
+import { allReviews } from "src/api/reviews";
+import { getProps } from "src/components/Review/getProps";
+import { Review } from "src/components/Review/Review";
+import Layout from "src/layouts/Layout.astro";
+import { textStarsForGrade } from "src/utils/textStarsForGrade";
+
+export async function getStaticPaths() {
+  const { reviews } = await allReviews();
+
+  return await Promise.all(
+    reviews.map(async (review) => {
+      return {
+        params: {
+          slug: review.slug,
+        },
+        props: {
+          slug: review.slug,
+        },
+      };
+    }),
+  );
+}
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+const props = await getProps(slug);
+---
+
+<Layout
+  title={`${props.value.title} (${props.value.year})`}
+  description={`${textStarsForGrade(props.value.grade)} ${props.value.excerptPlainText ?? ""}`}
+  image={props.seoImageSrc}
+  article
+>
+  <Review {...props} />
+</Layout>

@@ -1,43 +1,23 @@
-import { graphql } from "gatsby";
-import { Box, IBoxProps } from "../Box";
-import { Spacer } from "../Spacer";
-import { ReadingHistoryEntry } from "./ReadingHistoryEntry";
+import type { ReviewWithContent } from "src/api/reviews";
 
-interface IIReadingHistoryProps extends IBoxProps {
-  reviewData: Queries.ReviewReadingHistoryFragment;
+import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
+
+interface Props {
+  values: ReviewWithContent["readings"];
+  className?: string;
 }
-export function ReadingHistory({ reviewData, ...rest }: IIReadingHistoryProps) {
+export function ReadingHistory({ values, className }: Props) {
   return (
-    <Box {...rest}>
-      <Box
-        as="h3"
-        color="subtle"
-        fontSize="medium"
-        fontWeight="normal"
-        paddingX="gutter"
-        boxShadow="borderBottom"
-        {...rest}
-      >
+    <div className={className}>
+      <h3 className="px-gutter text-md font-normal text-subtle shadow-bottom">
         Reading History
-        <Spacer size={8} axis="vertical" />
-      </Box>
-      <Box as="ul">
-        {reviewData.readings.map((reading) => (
-          <ReadingHistoryEntry
-            as="li"
-            key={reading.sequence}
-            reading={reading}
-          />
+        <div className="spacer-y-2" />
+      </h3>
+      <ul>
+        {values.map((value) => (
+          <ReadingHistoryListItem key={value.sequence} value={value} />
         ))}
-      </Box>
-    </Box>
+      </ul>
+    </div>
   );
 }
-
-export const query = graphql`
-  fragment ReviewReadingHistory on ReviewedWorksJson {
-    readings {
-      ...ReviewReadingHistoryEntry
-    }
-  }
-`;

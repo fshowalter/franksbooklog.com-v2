@@ -1,11 +1,11 @@
-import { graphql } from "gatsby";
+import type { ReviewWithContent } from "src/api/reviews";
 
-export function StructuredData({
-  reviewStructuredData,
-}: {
-  reviewStructuredData: Queries.ReviewStructuredDataFragment;
-}) {
-  const structuredData = buildStructuredData(reviewStructuredData);
+interface Props extends Pick<ReviewWithContent, "grade" | "title"> {
+  seoImageSrc: string;
+}
+
+export function StructuredData({ title, grade, seoImageSrc }: Props) {
+  const structuredData = buildStructuredData(title, grade, seoImageSrc);
 
   if (!structuredData) {
     return null;
@@ -21,9 +21,11 @@ export function StructuredData({
 }
 
 function buildStructuredData(
-  reviewStructuredData: Queries.ReviewStructuredDataFragment,
+  title: Props["title"],
+  grade: Props["grade"],
+  seoImageSrc: Props["seoImageSrc"],
 ) {
-  if (reviewStructuredData.grade == "Abandoned") {
+  if (grade == "Abandoned") {
     return null;
   }
 
@@ -40,12 +42,12 @@ function buildStructuredData(
     "@type": "Review",
     itemReviewed: {
       "@type": "Book",
-      name: reviewStructuredData.title,
-      image: reviewStructuredData.seoImage.childImageSharp?.resize?.src,
+      name: title,
+      image: seoImageSrc,
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: gradeMap[reviewStructuredData.grade[0]],
+      ratingValue: gradeMap[grade[0]],
     },
     author: {
       "@type": "Person",
@@ -53,17 +55,3 @@ function buildStructuredData(
     },
   };
 }
-
-export const pageQuery = graphql`
-  fragment ReviewStructuredData on ReviewedWorksJson {
-    title
-    grade
-    seoImage: cover {
-      childImageSharp {
-        resize(toFormat: JPG, width: 1200, quality: 80) {
-          src
-        }
-      }
-    }
-  }
-`;

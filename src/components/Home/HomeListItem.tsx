@@ -53,7 +53,7 @@ export function HomeListItem({
         <a
           rel="canonical"
           href={`/reviews/${value.slug}/`}
-          className="cover-border mx-auto block max-w-prose desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+          className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
         >
           <Cover
             imageData={coverImageData}
@@ -68,7 +68,7 @@ export function HomeListItem({
             loading={eagerLoadCoverImage ? "eager" : "lazy"}
           />
         </a>
-        <div className="flex max-w-[512px] flex-col items-center desktop:col-span-5 desktop:items-start">
+        <div className="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4">
           <div className="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8">
             {value.yearPublished} | {value.kind}
           </div>
@@ -103,7 +103,7 @@ export function HomeListItem({
           <div className="spacer-y-4" />
           <RenderedMarkdown
             text={value.excerpt}
-            className="text-lg leading-normal tracking-0.3px text-muted"
+            className="max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
           />
         </div>
       </article>

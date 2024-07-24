@@ -1,269 +1,194 @@
-import { graphql } from "gatsby";
-import { backgroundColors } from "../../styles/colors.css";
-import { toSentenceArray } from "../../utils/";
-import { AuthorLink } from "../AuthorLink";
-import { Box, IBoxProps } from "../Box";
-import { Grade } from "../Grade";
-import { GraphqlImage } from "../GraphqlImage";
-import { Layout } from "../Layout";
-import { LongFormText } from "../LongFormText";
-import { MoreReviews } from "../MoreReviews";
-import { PageTitle } from "../PageTitle";
-import { Spacer } from "../Spacer";
+import type { CoverImageData } from "src/api/covers";
+import type { Review, ReviewWithContent } from "src/api/reviews";
+import { AuthorLink } from "src/components/AuthorLink";
+import { Cover } from "src/components/Cover";
+import { Grade } from "src/components/Grade";
+import { LongFormText } from "src/components/LongFormText";
+import { PageTitle } from "src/components/PageTitle";
+import { toSentenceArray } from "src/utils/";
+
 import { IncludedWorks } from "./IncludedWorks";
+import { MoreReviews } from "./MoreReviews";
 import { ReadingHistory } from "./ReadingHistory";
-import {
-  coverBackgroundBlurStyle,
-  coverBackgroundImageStyle,
-  coverBackgroundWrapStyle,
-  coverStyle,
-} from "./Review.css";
 import { StructuredData } from "./StructuredData";
+
+export const CoverImageConfig = {
+  width: 248,
+  height: 372,
+};
+
+const dateFormat = new Intl.DateTimeFormat("en-US", {
+  weekday: "short",
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+function formatDate(date: Date) {
+  return dateFormat.format(date);
+}
+
+export interface Props {
+  value: ReviewWithContent;
+  coverImageData: CoverImageData;
+  moreReviewCovers: Record<string, CoverImageData>;
+  seoImageSrc: string;
+}
+
 export function Review({
-  reviewData,
-}: {
-  reviewData: Queries.ReviewDataFragment;
-}): JSX.Element {
+  value,
+  coverImageData,
+  moreReviewCovers,
+  seoImageSrc,
+}: Props): JSX.Element {
   return (
-    <Layout>
-      <Box
-        as="main"
-        id="top"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        paddingTop={{ default: 24, desktop: 48 }}
-      >
-        <Box
-          as="header"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          paddingX="pageMargin"
-          width="full"
-        >
-          <Title reviewData={reviewData} textAlign="center" />
-          <Spacer axis="vertical" size={8} />
-          <Authors reviewData={reviewData} />
-          <Spacer axis="vertical" size={{ default: 8, desktop: 16 }} />
-          <YearAndKind reviewData={reviewData} />
-          <Spacer axis="vertical" size={32} />
-          <Cover reviewData={reviewData} />
-          <Spacer axis="vertical" size={48} />
-          <ReviewGrade reviewData={reviewData} />
-          <ReviewDate reviewData={reviewData} />
-          <Spacer axis="vertical" size={32} />
-        </Box>
-        <Box
-          display="flex"
-          flexDirection="column"
-          paddingX={{ default: "pageMargin", desktop: "gutter" }}
-        >
-          <LongFormText
-            maxWidth="prose"
-            // eslint-disable-next-line react/no-danger
-            text={reviewData.review.linkedHtml}
-          />
-        </Box>
-        <IncludedWorks reviewData={reviewData} maxWidth="popout" width="full" />
-        <Spacer axis="vertical" size={80} />
-        <ReadingHistory
-          reviewData={reviewData}
-          maxWidth="popout"
-          width="full"
+    <main id="top" className="flex flex-col items-center pt-6 desktop:pt-12">
+      <header className="flex w-full flex-col items-center px-pageMargin">
+        <Title title={value.title} subtitle={value.subtitle} />
+        <div className="spacer-y-2" />
+        <Authors values={value.authors} />
+        <div className="spacer-y-2 desktop:spacer-y-4" />
+        <YearAndKind yearPublished={value.yearPublished} kind={value.kind} />
+        <div className="spacer-y-8" />
+        <ReviewCover
+          coverImageData={coverImageData}
+          title={value.title}
+          authors={value.authors}
         />
-        <Spacer axis="vertical" size={128} />
-        <Box
-          display="flex"
-          flexDirection="column"
-          rowGap={{ default: 48, desktop: 96 }}
-          alignItems="center"
-          backgroundColor={{ default: "default", tablet: "subtle" }}
-          paddingTop={{ default: 0, tablet: 32 }}
-          paddingBottom={{ default: 0, tablet: 128 }}
-          width="full"
-        >
-          <MoreReviews
-            reviewedWorks={reviewData.moreReviews}
-            linkText="Reviews"
-            linkTarget="/reviews/"
-          />
-        </Box>
-      </Box>
-      <StructuredData reviewStructuredData={reviewData} />
-    </Layout>
+        <div className="spacer-y-12" />
+        <ReviewGrade value={value.grade} />
+        <ReviewDate value={value.date} />
+        <div className="spacer-y-8" />
+      </header>
+      <div className="flex flex-col px-pageMargin desktop:px-gutter">
+        <LongFormText className="max-w-prose" text={value.content} />
+      </div>
+      <IncludedWorks
+        values={value.includedWorks}
+        className="w-full max-w-popout"
+      />
+      <div className="spacer-y-20" />
+      <ReadingHistory values={value.readings} className="w-full max-w-popout" />
+      <div className="spacer-y-32" />
+      <div className="tablet: flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
+        <MoreReviews
+          values={value.moreReviews}
+          linkText="Reviews"
+          linkTarget="/reviews/"
+          covers={moreReviewCovers}
+        />
+      </div>
+      <StructuredData
+        title={value.title}
+        grade={value.grade}
+        seoImageSrc={seoImageSrc}
+      />
+    </main>
   );
 }
 
-interface ITitleProps extends IBoxProps {
-  reviewData: Queries.ReviewDataFragment;
-}
-
-function Title({ reviewData, ...rest }: ITitleProps) {
+function Title({
+  title,
+  subtitle,
+}: {
+  title: string;
+  subtitle: string | null;
+}) {
   return (
-    <Box {...rest}>
-      <PageTitle>{reviewData.title}</PageTitle>
-      {reviewData.subtitle && (
-        <>
-          <Box
-            fontSize="default"
-            letterSpacing={1}
-            color="muted"
-            maxWidth="prose"
-          >
-            {reviewData.subtitle}
-          </Box>
-        </>
+    <div className="text-center">
+      <PageTitle>{title}</PageTitle>
+      {subtitle && (
+        <div className="max-w-prose font-normal tracking-1px text-muted">
+          {subtitle}
+        </div>
       )}
-    </Box>
+    </div>
   );
 }
 
 function YearAndKind({
-  reviewData,
+  yearPublished,
+  kind,
 }: {
-  reviewData: Queries.ReviewDataFragment;
+  yearPublished: ReviewWithContent["yearPublished"];
+  kind: ReviewWithContent["kind"];
 }) {
   return (
-    <Box textTransform="uppercase" color="subtle" letterSpacing={1}>
-      <Box as="span" letterSpacing={0.25}>
-        {reviewData.yearPublished}
-      </Box>{" "}
-      | {reviewData.kind}
-    </Box>
+    <div className="uppercase tracking-1px text-subtle">
+      <span className="tracking-0.25px">{yearPublished}</span> | {kind}
+    </div>
   );
 }
 
-function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
+function Authors({ values }: { values: ReviewWithContent["authors"] }) {
   return (
-    <Box fontSize="medium" textAlign="center" color="muted">
+    <div className="text-center text-md text-muted">
       by{" "}
       {toSentenceArray(
-        reviewData.authors.map((author) => (
+        values.map((author) => (
           <AuthorLink
             key={author.slug}
-            author={author}
-            display="inline-block"
+            name={author.name}
+            slug={author.slug}
+            notes={author.notes}
+            className="inline-block"
           />
         )),
       )}
-    </Box>
+    </div>
   );
 }
 
-function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
-  const imageSrc =
-    reviewData.cover.childImageSharp?.gatsbyImageData.images.fallback?.src;
-
-  if (!imageSrc) {
+function ReviewCover({
+  coverImageData,
+  title,
+  authors,
+}: {
+  coverImageData: CoverImageData;
+  title: ReviewWithContent["title"];
+  authors: ReviewWithContent["authors"];
+}) {
+  if (!coverImageData) {
     return null;
   }
 
   return (
-    <Box
-      position="relative"
-      width="full"
-      maxWidth="popout"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      style={{
-        height: "340px",
-      }}
-    >
-      <Box className={coverBackgroundWrapStyle}>
-        <Box
-          className={coverBackgroundImageStyle}
-          style={{
-            backgroundColor: backgroundColors.default,
-            backgroundImage: `linear-gradient(90deg, rgba(${backgroundColors.defaultRGB},1) 0%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 30%, rgba(${backgroundColors.defaultRGB},0) 50%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 70%, rgba(${backgroundColors.defaultRGB},1) 100%), url(${imageSrc})`,
-            // backgroundImage: `url(${imageSrc})`,
-          }}
+    <div className="relative flex h-[340px] w-full max-w-popout flex-col items-center">
+      <div className="cover-clip-path absolute inset-0 overflow-hidden">
+        <div
+          className={`bg-[linear-gradient(90deg,rgba(var(---bg-default-rgb),1)0%,rgba(var(--bg-default-rgb),var(--bg-default-alpha))30%,rgba(var(--bg-default-rgb),0)50%,rgba(var(--bg-default-rgb),var(--bg-default-alpha))70%,rgba(var(--bg-default-rgb),1)100%),url(${coverImageData.src})] absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center`}
         />
-        <Box className={coverBackgroundBlurStyle} />
-      </Box>
-      <GraphqlImage
-        image={reviewData.cover}
-        alt={`A cover of ${reviewData.title} by ${toSentenceArray(
-          reviewData.authors.map((a) => a.name),
-        ).join("")} (${reviewData.yearPublished})`}
+        <div className="absolute size-full blur" />
+      </div>
+      <Cover
+        imageData={coverImageData}
+        title={title}
+        authors={authors}
+        width={CoverImageConfig.width}
+        height={CoverImageConfig.height}
         loading={"eager"}
-        className={coverStyle}
+        decoding="async"
       />
-    </Box>
+    </div>
   );
 }
 
-function ReviewGrade({
-  reviewData,
-}: {
-  reviewData: Queries.ReviewDataFragment;
-}) {
-  if (reviewData.grade == "Abandoned") {
+function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
+  if (value == "Abandoned") {
     return (
-      <Box
-        fontSize="medium"
-        textTransform="uppercase"
-        letterSpacing={1}
-        color="emphasis"
-      >
+      <div className="text-md uppercase tracking-1px text-emphasis">
         Abandoned
-      </Box>
+      </div>
     );
   }
-  return <Grade grade={reviewData.grade} height={32} />;
+  return <Grade value={value} height={32} />;
 }
 
-function ReviewDate({
-  reviewData,
-}: {
-  reviewData: Queries.ReviewDataFragment;
-}) {
+function ReviewDate({ value }: { value: ReviewWithContent["date"] }) {
   return (
-    <Box
-      display="flex"
-      color="subtle"
-      flexDirection="column"
-      alignItems="center"
-      letterSpacing={0.5}
-    >
-      <span>on</span> {reviewData.date}
-    </Box>
+    <div className="flex flex-col items-center tracking-0.5px text-subtle">
+      <span>on</span> {formatDate(value)}
+    </div>
   );
 }
-
-export const pageQuery = graphql`
-  fragment ReviewData on ReviewedWorksJson {
-    title
-    subtitle
-    yearPublished
-    kind
-    grade
-    date(formatString: "MMM DD, YYYY")
-    authors {
-      name
-      notes
-      slug
-    }
-    ...ReviewIncludedWorks
-    moreReviews {
-      ...MoreReviews
-    }
-    review {
-      linkedHtml
-    }
-    ...ReviewReadingHistory
-    cover {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 248
-          placeholder: BLURRED
-        )
-      }
-    }
-    ...ReviewStructuredData
-  }
-`;

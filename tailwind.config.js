@@ -57,6 +57,7 @@ export default {
         "0.3px": "0.01875rem",
         "0.5px": "0.03125rem",
         "0.75px": "0.046875rem",
+        "1px": "0.0625rem",
       },
       margin: {
         gutter: "var(--gutter-width)",

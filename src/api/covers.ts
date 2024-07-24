@@ -36,6 +36,43 @@ function parentCoverForWork(work: Work) {
   return parentCover;
 }
 
+export async function getSeoCovers({
+  works,
+}: {
+  works: Props["works"];
+}): Promise<Record<string, CoverImageData>> {
+  const imageMap: Record<string, CoverImageData> = {};
+
+  await Promise.all(
+    works.map(async (work) => {
+      let workCoverPath = Object.keys(images).find((image) => {
+        return image.endsWith(`${work.slug}.png`);
+      });
+
+      if (!workCoverPath) {
+        workCoverPath = parentCoverForWork(work)!;
+      }
+
+      const workCoverFile = await images[workCoverPath]();
+
+      const optimizedImage = await getImage({
+        src: workCoverFile.default,
+        width: 1200,
+        height: 630,
+        format: "jpeg",
+        quality: 80,
+      });
+
+      imageMap[work.slug] = {
+        srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+        src: normalizeSources(optimizedImage.src),
+      };
+    }),
+  );
+
+  return imageMap;
+}
+
 export async function getCovers({
   works,
   width,
