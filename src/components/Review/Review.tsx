@@ -99,7 +99,7 @@ function Title({
     <div className="text-center">
       <PageTitle>{title}</PageTitle>
       {subtitle && (
-        <div className="max-w-prose font-normal tracking-1px text-muted">
+        <div className="tracking-1px max-w-prose font-normal text-muted">
           {subtitle}
         </div>
       )}
@@ -115,7 +115,7 @@ function YearAndKind({
   kind: ReviewWithContent["kind"];
 }) {
   return (
-    <div className="uppercase tracking-1px text-subtle">
+    <div className="tracking-1px uppercase text-subtle">
       <span className="tracking-0.25px">{yearPublished}</span> | {kind}
     </div>
   );
@@ -132,7 +132,7 @@ function Authors({ values }: { values: ReviewWithContent["authors"] }) {
             name={author.name}
             slug={author.slug}
             notes={author.notes}
-            className="inline-block"
+            className="inline-block text-accent"
           />
         )),
       )}
@@ -157,19 +157,28 @@ function ReviewCover({
     <div className="relative flex h-[340px] w-full max-w-popout flex-col items-center">
       <div className="cover-clip-path absolute inset-0 overflow-hidden">
         <div
-          className={`bg-[linear-gradient(90deg,rgba(var(---bg-default-rgb),1)0%,rgba(var(--bg-default-rgb),var(--bg-default-alpha))30%,rgba(var(--bg-default-rgb),0)50%,rgba(var(--bg-default-rgb),var(--bg-default-alpha))70%,rgba(var(--bg-default-rgb),1)100%),url(${coverImageData.src})] absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center`}
+          style={{
+            backgroundColor: "var(--bg-default)",
+            backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageData.src})`,
+          }}
+          className={
+            "absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+          }
         />
-        <div className="absolute size-full blur" />
+        <div className="absolute size-full backdrop-blur" />
       </div>
-      <Cover
-        imageData={coverImageData}
-        title={title}
-        authors={authors}
-        width={CoverImageConfig.width}
-        height={CoverImageConfig.height}
-        loading={"eager"}
-        decoding="async"
-      />
+      <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
+        <Cover
+          imageData={coverImageData}
+          title={title}
+          authors={authors}
+          width={CoverImageConfig.width}
+          height={CoverImageConfig.height}
+          loading={"eager"}
+          decoding="async"
+          className="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+        />
+      </div>
     </div>
   );
 }
@@ -177,7 +186,7 @@ function ReviewCover({
 function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
   if (value == "Abandoned") {
     return (
-      <div className="text-md uppercase tracking-1px text-emphasis">
+      <div className="tracking-1px text-md uppercase text-emphasis">
         Abandoned
       </div>
     );

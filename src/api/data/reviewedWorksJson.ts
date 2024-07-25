@@ -11,7 +11,7 @@ const ReadingSchema = z.object({
   readingTime: z.number(),
   abandoned: z.boolean(),
   sequence: z.number(),
-  date: z.date(),
+  date: z.coerce.date(),
 });
 
 const AuthorSchema = z.object({

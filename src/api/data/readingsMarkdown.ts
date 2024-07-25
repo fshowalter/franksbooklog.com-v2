@@ -16,7 +16,7 @@ const DataSchema = z.object({
   sequence: z.number(),
   work_slug: z.string(),
   edition: z.string(),
-  editionNotes: z.nullable(z.string()),
+  edition_notes: z.nullable(z.string()),
   timeline: z.array(TimelineEntrySchema),
 });
 
