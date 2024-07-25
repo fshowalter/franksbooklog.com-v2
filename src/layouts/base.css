@@ -58,7 +58,7 @@
   :root {
     --gutter-width: 32px;
     --page-margin-width: 64px;
-    --header-offset: 176px;
+    --header-offset: 129px;
   }
 }
 
@@ -116,7 +116,7 @@
     blockquote {
       border-left: 0.5rem solid var(--border-default);
       color: var(--fg-muted);
-      font-style: "italic";
+      font-style: italic;
       margin: 24px 0;
       padding: 0 24px;
       position: relative;

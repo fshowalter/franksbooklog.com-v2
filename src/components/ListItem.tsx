@@ -1,20 +1,20 @@
 import { twJoin } from "tailwind-merge";
 
-export function PageTitle({
+export function ListItem({
   children,
   className,
 }: {
   children: React.ReactNode;
   className?: string;
-}): JSX.Element {
+}) {
   return (
-    <h1
+    <li
       className={twJoin(
-        "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
+        "flex flex-row gap-x-4 px-gutter py-4 even:bg-subtle tablet:gap-x-6 tablet:px-6",
         className,
       )}
     >
       {children}
-    </h1>
+    </li>
   );
 }

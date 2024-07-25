@@ -20,10 +20,12 @@ export function MoreReviews({
   }
 
   return (
-    <nav className="relative flex w-full flex-col items-center tablet:px-gutter desktop:w-auto desktop:px-0">
-      <div className="w-full px-gutter shadow-bottom tablet:px-0 tablet:py-4 tablet:shadow-none">
+    <nav className="relative flex w-full flex-col items-center tablet:px-gutter desktop:w-auto desktop:max-w-[992px] desktop:px-0">
+      <div className="w-full px-gutter py-2 shadow-bottom tablet:px-0 tablet:py-4 tablet:shadow-none">
         <span className="font-semibold text-muted">More </span>
-        <a href={linkTarget}>{linkText}</a>
+        <a href={linkTarget} className="text-accent">
+          {linkText}
+        </a>
       </div>
       <CoverGallery className="w-full px-0">
         {values.map((value) => {
@@ -40,8 +42,8 @@ export function MoreReviews({
             />
           );
         })}
-        <li className="block px-gutter py-4 text-right shadow-bottom tablet:px-0 tablet:shadow-none">
-          <a href={linkTarget}>
+        <li className="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-[var(--gutter-width)] tablet:top-0 tablet:px-0 tablet:shadow-none desktop:right-0">
+          <a href={linkTarget} className="text-accent">
             All{" "}
             <span className="inline tablet:hidden desktop:inline">
               {linkText}

@@ -11,6 +11,38 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
+const progressDateFormat = new Intl.DateTimeFormat("en-GB", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+interface Props {
+  value: ReviewWithContent["readings"][0];
+}
+
+export function ReadingHistoryListItem({ value }: Props) {
+  return (
+    <li className="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle">
+      <div className="mt-1">
+        <DateIcon />{" "}
+      </div>
+      <div className="col-start-3">
+        <Date value={value.date} />
+        <Edition value={value.edition} />{" "}
+        <EditionNotes value={value.editionNotes} />
+      </div>
+      <div className="col-start-3 row-start-2">
+        <Details value={value} />
+      </div>
+      <div className="col-span-3 col-start-1 row-start-3 pt-4">
+        <ReadingNotes value={value.readingNotes} />
+      </div>
+    </li>
+  );
+}
+
 function Date({ value }: { value: ReviewWithContent["readings"][0]["date"] }) {
   return (
     <>
@@ -73,7 +105,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
       <summary>
         {summaryText} {value.readingTime} Days
       </summary>
-      <ol className="w-full">
+      <ol className="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2">
         {value.timeline.map((entry) => {
           let progressValue = null;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -86,10 +118,10 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
             progressValue = parseInt(progressNumber);
           }
 
-          const entryDate = dateFormat.format(entry.date);
+          const entryDate = progressDateFormat.format(entry.date);
 
           return (
-            <li key={entryDate}>
+            <li key={entryDate} className="contents *:odd:bg-subtle">
               <div className="whitespace-nowrap px-gutter leading-10">
                 {entryDate}
               </div>
@@ -119,32 +151,7 @@ function ReadingNotes({
   }
   return (
     <div className="pb-6">
-      <RenderedMarkdown className="text-base leading-none" text={value} />
+      <RenderedMarkdown className="text-base" text={value} />
     </div>
-  );
-}
-
-interface Props {
-  value: ReviewWithContent["readings"][0];
-}
-
-export function ReadingHistoryListItem({ value }: Props) {
-  return (
-    <li className="block px-gutter even:bg-subtle">
-      <div>
-        <DateIcon />{" "}
-      </div>
-      <div>
-        <Date value={value.date} />
-        <Edition value={value.edition} />{" "}
-        <EditionNotes value={value.editionNotes} />
-      </div>
-      <div>
-        <Details value={value} />
-      </div>
-      <div>
-        <ReadingNotes value={value.readingNotes} />
-      </div>
-    </li>
   );
 }

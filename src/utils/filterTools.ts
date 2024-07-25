@@ -1,10 +1,10 @@
 export interface FilterableState<T, S, G> {
   filters: Record<string, (item: T) => boolean>;
-  filteredItems: T[];
-  allItems: T[];
+  filteredValues: T[];
+  allValues: T[];
   sortValue: S;
   showCount: number;
-  groupedItems: G;
+  groupedValues: G;
 }
 
 export function filterTools<T, S, G>(
@@ -56,8 +56,8 @@ function buildApplyFilters<T, S, G>(
     currentState: State,
   ): State {
     const filteredItems = sorter(
-      filterCollection({
-        collection: currentState.allItems,
+      filterValues({
+        values: currentState.allValues,
         filters: newFilters,
       }),
       currentState.sortValue,
@@ -77,16 +77,16 @@ function buildApplyFilters<T, S, G>(
   };
 }
 
-export function filterCollection<T>({
-  collection,
+export function filterValues<T>({
+  values,
   filters,
 }: {
-  collection: readonly T[];
+  values: readonly T[];
   filters: Record<string, (arg0: T) => boolean>;
 }): T[] {
-  return collection.filter((item) => {
+  return values.filter((value) => {
     return Object.values(filters).every((filter) => {
-      return filter(item);
+      return filter(value);
     });
   });
 }

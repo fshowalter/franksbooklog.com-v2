@@ -26,7 +26,7 @@ export function Grade({
   height: 32 | 24 | 18 | 16;
   className?: string;
 }): JSX.Element | null {
-  if (!value) {
+  if (!value || value == "Abandoned") {
     return null;
   }
 

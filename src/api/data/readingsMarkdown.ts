@@ -53,7 +53,7 @@ async function parseAllReadingsMarkdown() {
           slug: greyMatter.work_slug,
           edition: greyMatter.edition,
           timeline: greyMatter.timeline,
-          editionNotesRaw: greyMatter.editionNotes,
+          editionNotesRaw: greyMatter.edition_notes,
           readingNotesRaw: content,
         };
 

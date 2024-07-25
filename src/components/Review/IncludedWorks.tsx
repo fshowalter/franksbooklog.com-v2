@@ -28,7 +28,7 @@ export function IncludedWorks({ values, className }: Props) {
           >
             <a
               href={`/reviews/${value.slug}/`}
-              className="text-md font-semibold"
+              className="text-md font-semibold text-accent"
             >
               {value.title}
             </a>{" "}

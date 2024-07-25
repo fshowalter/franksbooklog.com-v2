@@ -71,7 +71,7 @@ export function Review({
       <div className="spacer-y-20" />
       <ReadingHistory values={value.readings} className="w-full max-w-popout" />
       <div className="spacer-y-32" />
-      <div className="tablet: flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
+      <div className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
         <MoreReviews
           values={value.moreReviews}
           linkText="Reviews"
@@ -99,7 +99,7 @@ function Title({
     <div className="text-center">
       <PageTitle>{title}</PageTitle>
       {subtitle && (
-        <div className="tracking-1px max-w-prose font-normal text-muted">
+        <div className="max-w-prose font-normal tracking-1px text-muted">
           {subtitle}
         </div>
       )}
@@ -115,7 +115,7 @@ function YearAndKind({
   kind: ReviewWithContent["kind"];
 }) {
   return (
-    <div className="tracking-1px uppercase text-subtle">
+    <div className="uppercase tracking-1px text-subtle">
       <span className="tracking-0.25px">{yearPublished}</span> | {kind}
     </div>
   );
@@ -186,7 +186,7 @@ function ReviewCover({
 function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
   if (value == "Abandoned") {
     return (
-      <div className="tracking-1px text-md uppercase text-emphasis">
+      <div className="text-md uppercase tracking-1px text-emphasis">
         Abandoned
       </div>
     );

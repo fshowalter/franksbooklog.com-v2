@@ -1,9 +1,13 @@
 {
   "span": "2024",
-  "reviews": 1,
+  "reviews": 2,
   "readWorks": 2,
   "books": 2,
   "gradeDistribution": [
+    {
+      "name": "A-",
+      "count": 1
+    },
     {
       "name": "B+",
       "count": 1

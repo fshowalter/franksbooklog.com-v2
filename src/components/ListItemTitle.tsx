@@ -11,12 +11,16 @@ export function ListItemTitle({ title, slug, className }: Props) {
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twJoin("block text-md leading-5", className)}
+        className={twJoin("block text-md leading-5 text-accent", className)}
       >
         {title}
       </a>
     );
   }
 
-  return <span className="block text-md leading-5">{title}</span>;
+  return (
+    <span className={twJoin("block text-md leading-5", className)}>
+      {title}
+    </span>
+  );
 }

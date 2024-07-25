@@ -35,27 +35,31 @@ export function CoverGalleryListItem({
   authors: Author[];
 }): JSX.Element {
   return (
-    <li className="flex flex-row items-center gap-x-4 px-0 py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:px-gutter tablet:py-0 tablet:even:bg-default">
+    <li className="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset">
       <Image
         slug={slug}
         imageData={imageData}
         title={title}
         authors={authors}
-        className="shrink-0"
+        className="min-w-20 max-w-20 shrink-0 tablet:max-w-poster"
       />
       <div className="tablet:spacer-y-2" />
       <div className="flex grow flex-col tablet:w-full tablet:items-center">
         <div className="tablet:spacer-y-1" />
-        <ListItemTitle title={title} slug={slug} />
+        <ListItemTitle
+          title={title}
+          slug={slug}
+          className="tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
+        />
         <div className="spacer-y-1 tablet:spacer-y-2" />
         <Authors values={authors} className="text-left tablet:text-center" />
-        <div className="spacer-y-2" />
+        <div className="spacer-y-3" />
         <YearAndKind
           kind={kind}
           year={year}
           className="text-left tablet:text-center"
         />
-        <div className="spacer-y-2" />
+        <div className="spacer-y-3" />
         {grade && (
           <>
             <Grade value={grade} height={16} />

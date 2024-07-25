@@ -4,7 +4,7 @@ export function linkReviewedWorks(
 ) {
   let result = text;
 
-  const re = RegExp(/(<span data-work-slug="(.*)">)(.*?)(<\/span>)/, "g");
+  const re = RegExp(/(<span data-work-slug="([^"]*)">)(.*?)(<\/span>)/, "g");
 
   const matches = [...text.matchAll(re)];
 

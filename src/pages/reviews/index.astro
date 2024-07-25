@@ -1,0 +1,14 @@
+---
+import { getProps } from "src/components/Reviews/getProps";
+import { Reviews } from "src/components/Reviews/Reviews";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Reviews"
+  description="A sortable and filterable list of every book or short story I've read and reviewed since 2022."
+>
+  <Reviews client:load {...props} />
+</Layout>

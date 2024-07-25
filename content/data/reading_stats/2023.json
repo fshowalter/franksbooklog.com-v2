@@ -1,6 +1,6 @@
 {
   "span": "2023",
-  "reviews": 10,
+  "reviews": 9,
   "readWorks": 10,
   "books": 8,
   "gradeDistribution": [
@@ -11,10 +11,6 @@
     {
       "name": "C-",
       "count": 2
-    },
-    {
-      "name": "A-",
-      "count": 1
     },
     {
       "name": "F",
