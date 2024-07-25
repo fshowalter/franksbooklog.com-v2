@@ -48,14 +48,14 @@ export function filterTools<T, S, G>(
 }
 
 function buildApplyFilters<T, S, G>(
-  sorter: (items: T[], sortOrder: S) => T[],
-  grouper: (items: T[], sortOrder: S) => G,
+  sorter: (values: T[], sortOrder: S) => T[],
+  grouper: (values: T[], sortOrder: S) => G,
 ) {
   return function applyFilters<State extends FilterableState<T, S, G>>(
-    newFilters: Record<string, (item: T) => boolean>,
+    newFilters: Record<string, (value: T) => boolean>,
     currentState: State,
   ): State {
-    const filteredItems = sorter(
+    const filteredValues = sorter(
       filterValues({
         values: currentState.allValues,
         filters: newFilters,
@@ -63,16 +63,16 @@ function buildApplyFilters<T, S, G>(
       currentState.sortValue,
     );
 
-    const groupedItems = grouper(
-      filteredItems.slice(0, currentState.showCount),
+    const groupedValues = grouper(
+      filteredValues.slice(0, currentState.showCount),
       currentState.sortValue,
     );
 
     return {
       ...currentState,
       filters: newFilters,
-      filteredItems,
-      groupedItems,
+      filteredValues,
+      groupedValues,
     };
   };
 }

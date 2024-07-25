@@ -22,7 +22,7 @@ export function Header({
       <div className="text-subtle">
         <div className="spacer-y-4" />
         <p className="px-gutter">
-          Since 2022, I&apos;ve published{" "}
+          I&apos;ve published{" "}
           <span className="text-emphasis">{reviewCount.toLocaleString()}</span>{" "}
           reviews comprising{" "}
           <span className="text-emphasis">
@@ -34,7 +34,7 @@ export function Header({
           <span className="text-emphasis">
             {abandonedCount.toLocaleString()}
           </span>{" "}
-          abandoned).
+          abandoned) since 2022.
         </p>
         <div className="spacer-y-4" />
         <p className="text-center">

@@ -9,10 +9,10 @@ interface Props {
 export function ReadingHistory({ values, className }: Props) {
   return (
     <div className={className}>
-      <h3 className="px-gutter text-md font-normal text-subtle shadow-bottom">
+      <h2 className="px-gutter text-md font-normal text-subtle shadow-bottom">
         Reading History
         <div className="spacer-y-2" />
-      </h3>
+      </h2>
       <ul>
         {values.map((value) => (
           <ReadingHistoryListItem key={value.sequence} value={value} />
