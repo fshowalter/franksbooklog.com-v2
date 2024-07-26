@@ -1,0 +1,14 @@
+---
+import { Authors } from "src/components/Authors/Authors";
+import { getProps } from "src/components/Authors/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Authors"
+  description="A sortable and filterable list of authors I've read."
+>
+  <Authors client:load {...props} />
+</Layout>

@@ -54,13 +54,17 @@ function GroupingListItem({
   children: React.ReactNode;
   zIndex: number;
 }) {
+  const groupHeader = (
+    <div className="bg-canvas px-gutter py-2 tablet:px-6">{groupText}</div>
+  );
+
   return (
     <li className="block">
       <div
         style={{ zIndex: zIndex }}
         className="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
       >
-        <div className="bg-canvas px-gutter py-2 tablet:px-6">{groupText}</div>
+        {groupText != "" && groupHeader}
       </div>
       {children}
     </li>
