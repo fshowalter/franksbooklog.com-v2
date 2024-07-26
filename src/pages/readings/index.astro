@@ -1,0 +1,14 @@
+---
+import { getProps } from "src/components/Readings/getProps";
+import { Readings } from "src/components/Readings/Readings";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="Reading Log"
+  description="A chronological list of my reading since 2022."
+>
+  <Readings client:load {...props} />
+</Layout>

@@ -62,9 +62,7 @@ function GroupingListItem({
       >
         <div className="bg-canvas px-gutter py-2 tablet:px-6">{groupText}</div>
       </div>
-      <div className="h-0 min-h-0 tablet:h-4 tablet:min-h-4" />
       {children}
-      <div className="h-0 min-h-0 tablet:h-4 tablet:min-h-4" />
     </li>
   );
 }

@@ -55,6 +55,11 @@ const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
+const yearFormat = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  timeZone: "UTC",
+});
+
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "year-published-asc":
@@ -160,11 +165,6 @@ export type ActionType =
   | SortAction
   | ShowMoreAction;
 
-/**
- * Applies the given action to the given state, returning a new State object.
- * @param state The current state.
- * @param action The action to apply.
- */
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;
   let groupedValues;
@@ -194,7 +194,7 @@ export function reducer(state: State, action: ActionType): State {
     }
     case Actions.FILTER_YEAR_REVIEWED: {
       return updateFilter(state, "reviewYear", (value) => {
-        const reviewYear = value.date.getFullYear().toString();
+        const reviewYear = yearFormat.format(value.date);
         return reviewYear >= action.values[0] && reviewYear <= action.values[1];
       });
     }

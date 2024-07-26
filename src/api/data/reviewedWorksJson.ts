@@ -3,6 +3,7 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
+import { WorkKindSchema } from "./workKindSchema";
 
 const reviewedWorksJsonFile = getContentPath("data", "reviewed-works.json");
 
@@ -37,15 +38,6 @@ const MoreReviewAuthorSchema = z.object({
   name: z.string(),
 });
 
-const WorkKindSchema = z.enum([
-  "Anthology",
-  "Collection",
-  "Nonfiction",
-  "Novel",
-  "Novella",
-  "Short Story",
-]);
-
 const MoreReviewSchema = z.object({
   title: z.string(),
   yearPublished: z.string(),
@@ -62,7 +54,7 @@ const MoreByAuthorSchema = z.object({
   works: z.array(MoreReviewSchema),
 });
 
-const ReviewedWorksJsonSchema = z.object({
+const ReviewedWorkJsonSchema = z.object({
   sequence: z.number(),
   slug: z.string(),
   includedInSlugs: z.array(z.string()),
@@ -81,14 +73,14 @@ const ReviewedWorksJsonSchema = z.object({
 
 export type ReviewedWorkJsonReading = z.infer<typeof ReadingSchema>;
 
-export type ReviewedWorkJson = z.infer<typeof ReviewedWorksJsonSchema>;
+export type ReviewedWorkJson = z.infer<typeof ReviewedWorkJsonSchema>;
 
 async function parseAllReviewedWorksJson() {
   const json = await fs.readFile(reviewedWorksJsonFile, "utf8");
   const data = JSON.parse(json) as unknown[];
 
   return data.map((item) => {
-    return ReviewedWorksJsonSchema.parse(item);
+    return ReviewedWorkJsonSchema.parse(item);
   });
 }
 
