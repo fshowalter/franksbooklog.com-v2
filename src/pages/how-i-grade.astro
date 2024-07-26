@@ -1,0 +1,18 @@
+---
+import { Article } from "src/components/Article/Article";
+import { getProps } from "src/components/Article/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps({
+  slug: "how-i-grade",
+  alt: "Shelves teeming with books.",
+});
+---
+
+<Layout
+  title={props.title}
+  description="The criteria I use to rate books on this site."
+  article
+>
+  <Article {...props} />
+</Layout>

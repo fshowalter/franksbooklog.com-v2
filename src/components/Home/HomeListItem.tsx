@@ -32,16 +32,16 @@ export interface ListItemValue
     | "kind"
     | "yearPublished"
     | "authors"
-  > {}
+  > {
+  coverImageData: CoverImageData;
+}
 
 export function HomeListItem({
   value,
   eagerLoadCoverImage,
-  coverImageData,
 }: {
   value: ListItemValue;
   eagerLoadCoverImage: boolean;
-  coverImageData: CoverImageData;
 }): JSX.Element {
   return (
     <li className="flex even:bg-subtle">
@@ -56,7 +56,7 @@ export function HomeListItem({
           className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
         >
           <Cover
-            imageData={coverImageData}
+            imageData={value.coverImageData}
             authors={value.authors}
             title={value.title}
             decoding="async"

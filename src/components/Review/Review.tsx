@@ -8,10 +8,10 @@ import { PageTitle } from "src/components/PageTitle";
 import { toSentenceArray } from "src/utils/";
 
 import { IncludedWorks } from "./IncludedWorks";
+import type { MoreReviewsValue } from "./MoreReviews";
 import { MoreReviews } from "./MoreReviews";
 import { ReadingHistory } from "./ReadingHistory";
 import { StructuredData } from "./StructuredData";
-
 export const CoverImageConfig = {
   width: 248,
   height: 372,
@@ -29,17 +29,19 @@ function formatDate(date: Date) {
   return dateFormat.format(date);
 }
 
+interface Value extends ReviewWithContent {
+  moreReviews: MoreReviewsValue[];
+}
+
 export interface Props {
-  value: ReviewWithContent;
+  value: Value;
   coverImageData: CoverImageData;
-  moreReviewCovers: Record<string, CoverImageData>;
   seoImageSrc: string;
 }
 
 export function Review({
   value,
   coverImageData,
-  moreReviewCovers,
   seoImageSrc,
 }: Props): JSX.Element {
   return (
@@ -76,7 +78,6 @@ export function Review({
           values={value.moreReviews}
           linkText="Reviews"
           linkTarget="/reviews/"
-          covers={moreReviewCovers}
         />
       </div>
       <StructuredData

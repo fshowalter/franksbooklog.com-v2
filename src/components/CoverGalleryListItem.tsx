@@ -1,4 +1,5 @@
 import type { CoverImageData } from "src/api/covers";
+import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
@@ -11,74 +12,58 @@ export const CoverGalleryListItemImageConfig = {
   height: 372,
 };
 
-export function CoverGalleryListItem({
-  slug,
-  imageData,
-  title,
-  year,
-  grade,
-  date,
-  kind,
-  edition,
-  authors,
-  details,
-}: {
-  slug: string;
+interface Author extends Pick<Review["authors"][0], "name"> {}
+
+export interface CoverGalleryListItemValue {
+  slug: Review["slug"];
   imageData: CoverImageData;
-  title: string;
-  year: string;
-  grade: string | null;
-  date?: string;
-  edition?: string | null;
-  kind: string | null;
-  details?: React.ReactNode;
+  title: Review["title"];
+  yearPublished: Review["yearPublished"];
+  grade: Review["grade"];
+  kind: Review["kind"];
   authors: Author[];
+}
+
+export function CoverGalleryListItem({
+  value,
+}: {
+  value: CoverGalleryListItemValue;
 }): JSX.Element {
   return (
     <li className="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset">
       <Image
-        slug={slug}
-        imageData={imageData}
-        title={title}
-        authors={authors}
+        slug={value.slug}
+        imageData={value.imageData}
+        title={value.title}
+        authors={value.authors}
         className="min-w-20 max-w-20 shrink-0 tablet:max-w-poster"
       />
       <div className="tablet:spacer-y-2" />
       <div className="flex grow flex-col tablet:w-full tablet:items-center">
         <div className="tablet:spacer-y-1" />
         <ListItemTitle
-          title={title}
-          slug={slug}
+          title={value.title}
+          slug={value.slug}
           className="tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
         />
         <div className="spacer-y-1 tablet:spacer-y-2" />
-        <Authors values={authors} className="text-left tablet:text-center" />
-        <div className="spacer-y-3" />
-        <YearAndKind
-          kind={kind}
-          year={year}
+        <Authors
+          values={value.authors}
           className="text-left tablet:text-center"
         />
         <div className="spacer-y-3" />
-        {grade && (
+        <YearAndKind
+          kind={value.kind}
+          year={value.yearPublished}
+          className="text-left tablet:text-center"
+        />
+        <div className="spacer-y-3" />
+        {value.grade && (
           <>
-            <Grade value={grade} height={16} />
+            <Grade value={value.grade} height={16} />
             <div className="spacer-y-2" />
           </>
         )}
-        {date && (
-          <>
-            <div className="text-subtle">{date}</div>
-            <div className="spacer-y-2 tablet:spacer-y-1" />
-          </>
-        )}
-        {edition && (
-          <>
-            <div className="text-subtle">{edition}</div>
-            <div className="spacer-y-2 tablet:spacer-y-1" />
-          </>
-        )}
-        {details && details}
       </div>
     </li>
   );
@@ -177,8 +162,4 @@ function Authors({
       {toSentenceArray(values.map((author) => author.name))}
     </div>
   );
-}
-
-interface Author {
-  name: string;
 }

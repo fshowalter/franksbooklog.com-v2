@@ -1,14 +1,11 @@
-import type { CoverImageData } from "src/api/covers";
-
 import type { ListItemValue } from "./HomeListItem";
 import { HomeListItem } from "./HomeListItem";
 
 export interface Props {
   values: ListItemValue[];
-  covers: Record<string, CoverImageData>;
 }
 
-export function Home({ values, covers }: Props): JSX.Element {
+export function Home({ values }: Props): JSX.Element {
   return (
     <main>
       <ol className="flex flex-col">
@@ -16,7 +13,6 @@ export function Home({ values, covers }: Props): JSX.Element {
           return (
             <HomeListItem
               eagerLoadCoverImage={index === 0}
-              coverImageData={covers[value.slug]}
               key={value.sequence}
               value={value}
             />

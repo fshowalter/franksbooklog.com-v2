@@ -36,11 +36,36 @@ function parentCoverForWork(work: Work) {
   return parentCover;
 }
 
-export async function getSeoCovers({
+export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
+  let workCoverPath = Object.keys(images).find((path) => {
+    return path.endsWith(`${work.slug}.png`);
+  });
+
+  if (!workCoverPath) {
+    workCoverPath = parentCoverForWork(work)!;
+  }
+
+  const workCoverFile = await images[workCoverPath]();
+
+  const optimizedImage = await getImage({
+    src: workCoverFile.default,
+    width: 1200,
+    height: 630,
+    format: "jpeg",
+    quality: 80,
+  });
+
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+  };
+}
+
+export async function getFluidCovers({
   works,
-}: {
-  works: Props["works"];
-}): Promise<Record<string, CoverImageData>> {
+  width,
+  height,
+}: Props): Promise<Record<string, CoverImageData>> {
   const imageMap: Record<string, CoverImageData> = {};
 
   await Promise.all(
@@ -57,9 +82,10 @@ export async function getSeoCovers({
 
       const optimizedImage = await getImage({
         src: workCoverFile.default,
-        width: 1200,
-        height: 630,
-        format: "jpeg",
+        width: width,
+        height: height,
+        format: "avif",
+        widths: [0.25, 0.5, 1, 2].map((w) => w * width),
         quality: 80,
       });
 
