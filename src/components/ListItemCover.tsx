@@ -25,8 +25,6 @@ export function ListItemCover({
         className="safari-border-radius-fix min-w-[72px] max-w-[72px] shrink-0 overflow-hidden rounded-lg shadow-all"
       >
         <Cover
-          title={title}
-          authors={authors}
           imageData={imageData}
           width={ListItemCoverImageConfig.width}
           height={ListItemCoverImageConfig.height}

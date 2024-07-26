@@ -24,6 +24,7 @@ export function ListWithFiltersLayout({
         <div className="flex grow flex-col">
           <div className="h-0 min-h-0 desktop:h-8 desktop:min-h-8" />
           {list}
+          <div className="spacer-y-6" />
         </div>
       </main>
     </div>

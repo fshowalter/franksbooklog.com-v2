@@ -1,10 +1,13 @@
 import { getImage } from "astro:assets";
+import { toSentenceArray } from "src/utils";
 
+import { allWorksJson, type WorkJson } from "./data/worksJson";
 import { normalizeSources } from "./utils/normalizeSources";
 
 export interface CoverImageData {
   src: string;
   srcSet: string;
+  alt: string;
 }
 
 interface Work {
@@ -18,32 +21,74 @@ interface Props {
   height: number;
 }
 
+let cachedWorksJson: WorkJson[] | null = null;
+
+if (import.meta.env.MODE !== "development") {
+  cachedWorksJson = await allWorksJson();
+}
+
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
 
-function parentCoverForWork(work: Work) {
-  let parentCover;
+function altTextForWorkJson(workJson: WorkJson) {
+  const title = workJson.subtitle
+    ? `${workJson.title}: ${workJson.subtitle}`
+    : workJson.title;
 
-  work.includedInSlugs.find((slug) => {
-    parentCover = Object.keys(images).find((image) => {
-      return image.endsWith(`${slug}.png`);
-    });
+  const authors = toSentenceArray(
+    workJson.authors.map((author) => {
+      return author.notes ? `${author.name} (${author.notes})` : author.name;
+    }),
+  ).join("");
 
-    return parentCover;
-  });
-
-  return parentCover;
+  return `A cover for ${title} by ${authors}`;
 }
 
-export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
+function parentCoverForWork(work: Work, worksJson: WorkJson[]) {
+  let parentWorkCoverPath: string | undefined;
+
+  const parentSlug = work.includedInSlugs.find((slug) => {
+    parentWorkCoverPath = Object.keys(images).find((image) => {
+      return image.endsWith(`${slug}.png`);
+    })!;
+
+    return parentWorkCoverPath ? slug : parentWorkCoverPath;
+  });
+
+  const parentWork = worksJson.find((work) => work.slug === parentSlug)!;
+
+  return {
+    workCoverPath: parentWorkCoverPath!,
+    altText: altTextForWorkJson(parentWork),
+  };
+}
+
+async function getWorkCoverPathAndAltText(work: Work) {
+  const worksJson = cachedWorksJson || (await allWorksJson());
+
   let workCoverPath = Object.keys(images).find((path) => {
     return path.endsWith(`${work.slug}.png`);
   });
 
-  if (!workCoverPath) {
-    workCoverPath = parentCoverForWork(work)!;
+  let altText: string;
+
+  if (workCoverPath) {
+    altText = altTextForWorkJson(
+      worksJson.find((workJson) => workJson.slug === work.slug)!,
+    );
+  } else {
+    ({ workCoverPath, altText } = parentCoverForWork(work, worksJson));
   }
+
+  return {
+    workCoverPath,
+    altText,
+  };
+}
+
+export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
+  const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
 
   const workCoverFile = await images[workCoverPath]();
 
@@ -58,6 +103,7 @@ export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
   return {
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
+    alt: altText,
   };
 }
 
@@ -70,13 +116,7 @@ export async function getFluidCovers({
 
   await Promise.all(
     works.map(async (work) => {
-      let workCoverPath = Object.keys(images).find((image) => {
-        return image.endsWith(`${work.slug}.png`);
-      });
-
-      if (!workCoverPath) {
-        workCoverPath = parentCoverForWork(work)!;
-      }
+      const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
 
       const workCoverFile = await images[workCoverPath]();
 
@@ -92,6 +132,7 @@ export async function getFluidCovers({
       imageMap[work.slug] = {
         srcSet: normalizeSources(optimizedImage.srcSet.attribute),
         src: normalizeSources(optimizedImage.src),
+        alt: altText,
       };
     }),
   );
@@ -108,13 +149,7 @@ export async function getCovers({
 
   await Promise.all(
     works.map(async (work) => {
-      let workCoverPath = Object.keys(images).find((image) => {
-        return image.endsWith(`${work.slug}.png`);
-      });
-
-      if (!workCoverPath) {
-        workCoverPath = parentCoverForWork(work)!;
-      }
+      const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
 
       const workCoverFile = await images[workCoverPath]();
 
@@ -130,6 +165,7 @@ export async function getCovers({
       imageMap[work.slug] = {
         srcSet: normalizeSources(optimizedImage.srcSet.attribute),
         src: normalizeSources(optimizedImage.src),
+        alt: altText,
       };
     }),
   );

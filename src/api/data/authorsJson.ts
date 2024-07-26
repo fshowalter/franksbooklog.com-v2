@@ -23,6 +23,8 @@ const WorkSchema = z.object({
   sortTitle: z.string(),
   gradeValue: z.nullable(z.number()),
   authors: z.array(WorkAuthorSchema),
+  reviewed: z.boolean(),
+  includedInSlugs: z.array(z.string()),
 });
 
 const AuthorJsonSchema = z.object({

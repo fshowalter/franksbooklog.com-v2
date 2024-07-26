@@ -30,7 +30,7 @@ export function Authors({ values, initialSort }: Props): JSX.Element {
       list={
         <List
           groupedValues={state.groupedValues}
-          totalCount={state.allValues.length}
+          totalCount={state.filteredValues.length}
           visibleCount={state.filteredValues.length}
           dispatch={dispatch}
         />
