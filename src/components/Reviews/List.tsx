@@ -4,6 +4,7 @@ import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
 import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
 
@@ -54,20 +55,15 @@ export function List({
 
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem className="items-center">
-      <ListItemCover
-        slug={value.slug}
-        imageData={value.imageData}
-        authors={value.authors}
-        title={value.title}
-      />
+    <ListItem>
+      <ListItemCover slug={value.slug} imageData={value.imageData} />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>
           <ListItemTitle title={value.title} slug={value.slug} />
           <div className="spacer-y-1" />
           <Authors values={value.authors} />
           <div className="spacer-y-2" />
-          <YearAndKind year={value.yearPublished} kind={value.kind} />
+          <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
           <div className="spacer-y-2" />
           <Grade value={value.grade} height={16} />
           <div className="spacer-y-2" />
@@ -81,21 +77,6 @@ function Authors({ values }: { values: Author[] }) {
   return (
     <div className="text-base leading-5 text-muted">
       {toSentenceArray(values.map((value) => value.name))}
-    </div>
-  );
-}
-
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}): JSX.Element | null {
-  return (
-    <div className="text-sm leading-4 tracking-0.5px text-subtle">
-      <span>{kind} | </span>
-      {year}
     </div>
   );
 }

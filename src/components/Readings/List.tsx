@@ -4,6 +4,7 @@ import { BarGradient } from "src/components/BarGradient";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
 import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
 import { toSentenceArray } from "src/utils";
 
 import type { ActionType } from "./Readings.reducer";
@@ -72,7 +73,7 @@ function DateListItem({
   const [date, day] = dayAndDate.split(" ");
 
   return (
-    <ListItem className="items-center pb-0">
+    <ListItem className="pb-0">
       <div>
         <div className="rounded shadow-all">
           <div className="w-12 bg-canvas py-2 text-center text-sm uppercase">
@@ -107,13 +108,8 @@ export function SubListItem({
   const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem className="items-center pt-0 shadow-bottom last:shadow-none even:bg-unset">
-      <ListItemCover
-        slug={value.slug}
-        imageData={imageData}
-        title={value.title}
-        authors={value.authors}
-      />
+    <ListItem className="pt-0 shadow-bottom last:shadow-none even:bg-unset">
+      <ListItemCover slug={value.slug} imageData={imageData} />
       <div className="grow">
         <TitleAndProgress
           title={value.title}
@@ -124,7 +120,7 @@ export function SubListItem({
         <div className="spacer-y-1" />
         <Authors values={value.authors} />
         <div className="spacer-y-2" />
-        <YearAndKind year={value.yearPublished} kind={value.kind} />
+        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
         <div className="spacer-y-2" />
         {value.progress !== "Abandoned" && (
           <BarGradient
@@ -191,21 +187,6 @@ function Authors({ values }: { values: ListItemValue["authors"] }) {
   return (
     <div className="font-normal leading-5 text-muted">
       {toSentenceArray(values.map((author) => author.name))}
-    </div>
-  );
-}
-
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}): JSX.Element {
-  return (
-    <div className="text-sm leading-4 tracking-0.5px text-subtle">
-      <span>{kind} | </span>
-      {year}
     </div>
   );
 }

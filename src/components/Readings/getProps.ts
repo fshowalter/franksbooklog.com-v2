@@ -12,6 +12,10 @@ export async function getProps(): Promise<Props> {
     distinctKinds,
     distinctReadingYears,
     distinctEditions,
+    bookCount,
+    workCount,
+    abandonedCount,
+    shortStoryCount,
   } = await allTimelineEntries();
 
   const covers = await getCovers({
@@ -52,5 +56,9 @@ export async function getProps(): Promise<Props> {
     distinctEditions,
     initialSort: "progress-date-desc",
     covers,
+    workCount,
+    bookCount,
+    abandonedCount,
+    shortStoryCount,
   };
 }

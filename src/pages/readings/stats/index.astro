@@ -1,0 +1,14 @@
+---
+import { AlltimeStats } from "src/components/AlltimeStats/AlltimeStats";
+import { getProps } from "src/components/AlltimeStats/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout
+  title="All-Time Stats"
+  description="My most-read authors and other stats."
+>
+  <AlltimeStats {...props} />
+</Layout>

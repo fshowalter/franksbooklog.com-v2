@@ -47,9 +47,6 @@ interface Reviews {
   distinctReviewYears: string[];
   distinctPublishedYears: string[];
   distinctKinds: string[];
-  bookCount: number;
-  shortStoryCount: number;
-  abandonedCount: number;
 }
 
 function getMastProcessor() {
@@ -199,10 +196,6 @@ async function parseReviewedWorksJson(
     distinctKinds: Array.from(distinctKinds).toSorted(),
     distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
     distinctReviewYears: Array.from(distinctReviewYears).toSorted(),
-    bookCount: reviews.filter((review) => review.kind !== "Short Story").length,
-    abandonedCount: reviews.filter((review) => review.gradeValue === 0).length,
-    shortStoryCount: reviews.filter((review) => review.kind === "Short Story")
-      .length,
   };
 }
 

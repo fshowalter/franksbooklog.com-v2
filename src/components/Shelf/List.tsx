@@ -1,33 +1,24 @@
-import type { Author } from "src/api/authors";
 import type { CoverImageData } from "src/api/covers";
-import { Grade } from "src/components/Grade";
+import type { ShelfWork } from "src/api/shelf";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
 import { ListItemCover } from "src/components/ListItemCover";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
 
-import type { ActionType } from "./Author.reducer";
-import { Actions } from "./Author.reducer";
+import type { ActionType } from "./Shelf.reducer";
+import { Actions } from "./Shelf.reducer";
 
-type AuthorWork = Author["works"][number];
+interface Author
+  extends Pick<ShelfWork["authors"][number], "name" | "notes" | "sortName"> {}
 
 export interface ListItemValue
   extends Pick<
-    AuthorWork,
-    | "title"
-    | "yearPublished"
-    | "kind"
-    | "slug"
-    | "sortTitle"
-    | "grade"
-    | "gradeValue"
-    | "reviewed"
+    ShelfWork,
+    "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
   > {
+  authors: Author[];
   imageData: CoverImageData;
-  otherAuthors: {
-    name: string;
-  }[];
 }
 
 export function List({
@@ -49,29 +40,22 @@ export function List({
       totalCount={totalCount}
       onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
-      {(value) => <WorkListItem value={value} key={value.slug} />}
+      {(value) => <ShelfListItem value={value} key={value.slug} />}
     </GroupedList>
   );
 }
 
-function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
+function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
-      <ListItemCover
-        slug={value.reviewed ? value.slug : null}
-        imageData={value.imageData}
-      />
+      <ListItemCover imageData={value.imageData} />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>
-          <ListItemTitle
-            title={value.title}
-            slug={value.reviewed ? value.slug : null}
-          />
-          <OtherAuthors values={value.otherAuthors} />
+          <ListItemTitle title={value.title} />
+          <div className="spacer-y-1" />
+          <Authors values={value.authors} />
           <div className="spacer-y-2" />
           <YearAndKind year={value.yearPublished} kind={value.kind} />
-          <div className="spacer-y-2" />
-          <Grade value={value.grade} height={16} />
           <div className="spacer-y-2" />
         </div>
       </div>
@@ -79,18 +63,11 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   );
 }
 
-function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
-  if (values.length === 0) {
-    return null;
-  }
-
+function Authors({ values }: { values: ListItemValue["authors"] }) {
   return (
-    <>
-      <div className="spacer-y-1" />
-      <div className="text-base leading-5 text-muted">
-        (with {toSentenceArray(values.map((value) => value.name))})
-      </div>
-    </>
+    <div className="text-base leading-5 text-muted">
+      {toSentenceArray(values.map((author) => author.name))}
+    </div>
   );
 }
 

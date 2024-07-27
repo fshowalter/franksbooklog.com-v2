@@ -41,7 +41,7 @@ export function List({
 
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem className="items-center">
+    <ListItem>
       <ListItemAvatar
         name={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}

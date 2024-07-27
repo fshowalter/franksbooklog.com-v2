@@ -1,0 +1,11 @@
+---
+import { getProps } from "src/components/Shelf/getProps";
+import { Shelf } from "src/components/Shelf/Shelf";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps();
+---
+
+<Layout title="The Shelf" description="My to-read list.">
+  <Shelf client:load {...props} />
+</Layout>

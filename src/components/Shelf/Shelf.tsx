@@ -1,26 +1,25 @@
 import { useReducer } from "react";
-import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
+import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import type { ListItemValue } from "./List";
-import { List } from "./List";
-import type { Sort } from "./Reviews.reducer";
-import { initState, reducer } from "./Reviews.reducer";
+import { List, type ListItemValue } from "./List";
+import type { Sort } from "./Shelf.reducer";
+import { initState, reducer } from "./Shelf.reducer";
 
 export interface Props {
   values: ListItemValue[];
-  distinctPublishedYears: readonly string[];
-  distinctReviewYears: readonly string[];
+  distinctAuthors: readonly string[];
   distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
   initialSort: Sort;
 }
 
-export function Reviews({
+export function Shelf({
   values,
-  distinctPublishedYears,
-  distinctReviewYears,
+  distinctAuthors,
   distinctKinds,
+  distinctPublishedYears,
   initialSort,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
@@ -34,22 +33,22 @@ export function Reviews({
 
   return (
     <ListWithFiltersLayout
-      header={<Header reviewCount={values.length} />}
+      header={<Header shelfCount={values.length} />}
       filters={
         <Filters
           dispatch={dispatch}
-          sortValue={state.sortValue}
-          distinctPublishedYears={distinctPublishedYears}
-          distinctReviewYears={distinctReviewYears}
+          distinctAuthors={distinctAuthors}
           distinctKinds={distinctKinds}
+          distinctPublishedYears={distinctPublishedYears}
+          sortValue={state.sortValue}
         />
       }
       list={
         <List
           dispatch={dispatch}
           groupedValues={state.groupedValues}
-          visibleCount={state.showCount}
           totalCount={state.filteredValues.length}
+          visibleCount={state.showCount}
         />
       }
     />

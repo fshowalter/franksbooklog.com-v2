@@ -2,7 +2,7 @@ import { twJoin } from "tailwind-merge";
 
 interface Props {
   title: string;
-  slug: string | null;
+  slug?: string | null;
   className?: string;
 }
 

@@ -21,6 +21,7 @@
   --fg-muted: rgb(0 0 0 / 65%);
   --fg-subtle: rgb(0 0 0 / 60%);
   --gutter-width: 20px;
+  --header-offset: 0;
   --image-filter: initial;
   --page-margin-width: 20px;
 }

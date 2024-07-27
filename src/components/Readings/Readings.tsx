@@ -15,6 +15,10 @@ export interface Props {
   distinctKinds: string[];
   distinctReadingYears: string[];
   initialSort: Sort;
+  shortStoryCount: number;
+  bookCount: number;
+  abandonedCount: number;
+  workCount: number;
   covers: Record<string, CoverImageData>;
 }
 
@@ -26,6 +30,10 @@ export function Readings({
   distinctWorkYears,
   initialSort,
   covers,
+  workCount,
+  shortStoryCount,
+  bookCount,
+  abandonedCount,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -38,7 +46,14 @@ export function Readings({
 
   return (
     <ListWithFiltersLayout
-      header={<Header />}
+      header={
+        <Header
+          workCount={workCount}
+          shortStoryCount={shortStoryCount}
+          bookCount={bookCount}
+          abandonedCount={abandonedCount}
+        />
+      }
       filters={
         <Filters
           dispatch={dispatch}

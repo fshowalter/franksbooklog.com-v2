@@ -9,6 +9,10 @@ interface TimelineEntries {
   distinctReadingYears: string[];
   distinctKinds: string[];
   distinctEditions: string[];
+  bookCount: number;
+  shortStoryCount: number;
+  abandonedCount: number;
+  workCount: number;
 }
 
 const yearFormatter = new Intl.DateTimeFormat("en-US", {
@@ -22,6 +26,9 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
   const distinctReadingYears = new Set<string>();
   const distinctKinds = new Set<string>();
   const distinctEditions = new Set<string>();
+  const works = timelineEntries.filter((entry) => {
+    return entry.progress === "Finished" || entry.progress === "Abandoned";
+  });
 
   timelineEntries.forEach((entry) => {
     distinctEditions.add(entry.edition);
@@ -36,5 +43,10 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
     distinctReadingYears: Array.from(distinctReadingYears).toSorted(),
     distinctWorkYears: Array.from(distinctWorkYears).toSorted(),
     distinctKinds: Array.from(distinctKinds).toSorted(),
+    bookCount: works.filter((work) => work.kind !== "Short Story").length,
+    abandonedCount: works.filter((work) => work.progress === "Abandoned")
+      .length,
+    shortStoryCount: works.filter((work) => work.kind === "Short Story").length,
+    workCount: works.length,
   };
 }
