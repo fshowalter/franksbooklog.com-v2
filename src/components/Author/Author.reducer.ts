@@ -202,7 +202,7 @@ export function reducer(state: State, action: ActionType): State {
         filters = {
           ...state.filters,
           reviewed: (item: ListItemValue) => {
-            return item.reviewed;
+            return !item.reviewed;
           },
         };
       }

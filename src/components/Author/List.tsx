@@ -1,14 +1,12 @@
 import type { Author } from "src/api/authors";
 import type { CoverImageData } from "src/api/covers";
+import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemTitle } from "src/components/ListItemTitle";
+import { toSentenceArray } from "src/utils";
 
-import { toSentenceArray } from "../../utils";
-import { Box } from "../Box";
-import { Grade } from "../Grade";
-import { ListItem } from "../ListItem";
-import { ListItemCover } from "../ListItemCover";
-import { ListItemTitle } from "../ListItemTitle";
-import { Spacer } from "../Spacer";
 import type { ActionType } from "./Author.reducer";
 import { Actions } from "./Author.reducer";
 
@@ -25,12 +23,11 @@ export interface ListItemValue
     | "grade"
     | "gradeValue"
     | "reviewed"
-    | "includedInSlugs"
   > {
   imageData: CoverImageData;
   otherAuthors: {
     name: string;
-  };
+  }[];
 }
 
 export function List({
@@ -63,51 +60,36 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemCover
         slug={value.reviewed ? value.slug : null}
         imageData={value.imageData}
-        title={value.title}
       />
-      <Box
-        flexGrow={1}
-        width={{ tablet: "full" }}
-        paddingRight={{ default: "gutter", desktop: 16 }}
-      >
-        <Box>
+      <div className="grow pr-gutter tablet:w-full desktop:pr-4">
+        <div>
           <ListItemTitle
-            title={item.title}
-            slug={item.reviewed ? item.slug : null}
+            title={value.title}
+            slug={value.reviewed ? value.slug : null}
           />
-          <Authors authors={item.authors} pageAuthorSlug={pageAuthorSlug} />
-          <Spacer axis="vertical" size={8} />
-          <YearAndKind year={item.yearPublished} kind={item.kind} />
-          <Spacer axis="vertical" size={8} />
-          <Grade grade={item.grade} height={16} />
-          <Spacer axis="vertical" size={8} />
-        </Box>
-      </Box>
+          <OtherAuthors values={value.otherAuthors} />
+          <div className="spacer-y-2" />
+          <YearAndKind year={value.yearPublished} kind={value.kind} />
+          <div className="spacer-y-2" />
+          <Grade value={value.grade} height={16} />
+          <div className="spacer-y-2" />
+        </div>
+      </div>
     </ListItem>
   );
 }
 
-function Authors({
-  pageAuthorSlug,
-  authors,
-}: {
-  pageAuthorSlug: string;
-  authors: readonly Queries.AuthorListItemAuthorsFragment[];
-}) {
-  if (authors.length === 1) {
+function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
+  if (values.length === 0) {
     return null;
   }
 
-  const otherAuthors = authors.filter((author) => {
-    return author.slug !== pageAuthorSlug;
-  });
-
   return (
     <>
-      <Spacer axis="vertical" size={4} />
-      <Box color="muted" fontSize="default" lineHeight={20}>
-        (with {toSentenceArray(otherAuthors.map((author) => author.name))})
-      </Box>
+      <div className="spacer-y-1" />
+      <div className="text-base leading-5 text-muted">
+        (with {toSentenceArray(values.map((value) => value.name))})
+      </div>
     </>
   );
 }
@@ -120,9 +102,9 @@ function YearAndKind({
   year: string;
 }): JSX.Element | null {
   return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      <Box as="span">{kind} | </Box>
+    <div className="text-sm leading-4 tracking-0.5px text-subtle">
+      <span>{kind} | </span>
       {year}
-    </Box>
+    </div>
   );
 }

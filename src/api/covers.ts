@@ -51,17 +51,27 @@ function parentCoverForWork(work: Work, worksJson: WorkJson[]) {
   const parentSlug = work.includedInSlugs.find((slug) => {
     parentWorkCoverPath = Object.keys(images).find((image) => {
       return image.endsWith(`${slug}.png`);
-    })!;
+    });
 
     return parentWorkCoverPath ? slug : parentWorkCoverPath;
   });
 
-  const parentWork = worksJson.find((work) => work.slug === parentSlug)!;
+  if (parentSlug && parentWorkCoverPath) {
+    const parentWork = worksJson.find((work) => work.slug === parentSlug)!;
+    return {
+      workCoverPath: parentWorkCoverPath,
+      altText: altTextForWorkJson(parentWork),
+    };
+  } else {
+    const defaultWorkCoverPath = Object.keys(images).find((image) => {
+      return image.endsWith(`default.png`);
+    })!;
 
-  return {
-    workCoverPath: parentWorkCoverPath!,
-    altText: altTextForWorkJson(parentWork),
-  };
+    return {
+      workCoverPath: defaultWorkCoverPath,
+      altText: "A blank cover.",
+    };
+  }
 }
 
 async function getWorkCoverPathAndAltText(work: Work) {
@@ -75,7 +85,10 @@ async function getWorkCoverPathAndAltText(work: Work) {
 
   if (workCoverPath) {
     altText = altTextForWorkJson(
-      worksJson.find((workJson) => workJson.slug === work.slug)!,
+      worksJson.find((workJson) => {
+        console.log(workJson.slug);
+        return workJson.slug === work.slug;
+      })!,
     );
   } else {
     ({ workCoverPath, altText } = parentCoverForWork(work, worksJson));

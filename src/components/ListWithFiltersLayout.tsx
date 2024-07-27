@@ -19,6 +19,7 @@ export function ListWithFiltersLayout({
             <Fieldset legend="Filter & Sort" className="desktop:self-start">
               {filters}
             </Fieldset>
+            <div className="spacer-y-8" />
           </div>
         </div>
         <div className="flex grow flex-col">

@@ -34,6 +34,7 @@ const AuthorJsonSchema = z.object({
   reviewedWorkCount: z.number(),
   workCount: z.number(),
   works: z.array(WorkSchema),
+  shelfWorkCount: z.number(),
 });
 
 async function parseAllAuthorsJson() {

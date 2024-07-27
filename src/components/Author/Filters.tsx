@@ -1,9 +1,11 @@
-import { Box } from "../Box";
-import { Button } from "../Button";
-import { DebouncedInput } from "../DebouncedInput";
-import { SelectField, SelectOptions } from "../SelectField";
-import { YearInput } from "../YearInput";
-import { ActionType, Actions, Sort } from "./Author.reducer";
+import { Button } from "src/components/Button";
+import { DebouncedInput } from "src/components/DebouncedInput";
+import { SelectField } from "src/components/SelectField";
+import { SelectOptions } from "src/components/SelectOptions";
+import { YearInput } from "src/components/YearInput";
+
+import type { ActionType, Sort } from "./Author.reducer";
+import { Actions } from "./Author.reducer";
 
 export function Filters({
   dispatch,
@@ -20,11 +22,11 @@ export function Filters({
 }) {
   return (
     <>
-      <Box display="flex" flexDirection="column" justifyContent="flex-end">
+      <div className="flex flex-col justify-end">
         <Button onClick={() => dispatch({ type: Actions.TOGGLE_REVIEWED })}>
           {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
         </Button>
-      </Box>
+      </div>
 
       <DebouncedInput
         label="Title"

@@ -1,34 +1,52 @@
-import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
-import { Sort, initState, reducer } from "./Author.reducer";
+import type { Author } from "src/api/authors";
+import type { AvatarImageData } from "src/api/avatars";
+import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
+
+import type { Sort } from "./Author.reducer";
+import { initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import { List } from "./List";
+import { List, type ListItemValue } from "./List";
 
-export function Author({
-  data,
-  distinctKinds,
-  distinctPublishedYears,
-  initialSort,
-}: {
-  data: Queries.AuthorDataFragment;
+export interface Props
+  extends Pick<Author, "name" | "reviewedWorkCount" | "shelfWorkCount"> {
+  values: ListItemValue[];
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
-}): JSX.Element {
+  avatarImageData: AvatarImageData;
+}
+
+export function Author({
+  values,
+  name,
+  reviewedWorkCount,
+  shelfWorkCount,
+  distinctKinds,
+  distinctPublishedYears,
+  initialSort,
+  avatarImageData,
+}: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...data.works],
-      sort: initialSort,
+      values,
+      initialSort,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      header={<Header data={data} />}
+      header={
+        <Header
+          name={name}
+          reviewedWorkCount={reviewedWorkCount}
+          shelfWorkCount={shelfWorkCount}
+          avatarImageData={avatarImageData}
+        />
+      }
       filters={
         <Filters
           dispatch={dispatch}
@@ -40,20 +58,12 @@ export function Author({
       }
       list={
         <List
-          groupedItems={state.groupedItems}
-          totalCount={state.filteredItems.length}
+          groupedValues={state.groupedValues}
+          totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
           dispatch={dispatch}
-          data={data}
         />
       }
     />
   );
 }
-
-export const pageQuery = graphql`
-  fragment AuthorData on AuthorsJson {
-    ...AuthorHeader
-    ...AuthorList
-  }
-`;

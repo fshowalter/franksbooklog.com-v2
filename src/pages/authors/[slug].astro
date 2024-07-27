@@ -1,0 +1,35 @@
+---
+import { allAuthors } from "src/api/authors";
+import { Author } from "src/components/Author/Author";
+import { getProps } from "src/components/Author/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const authors = await allAuthors();
+
+  return authors.map((author) => {
+    return {
+      params: {
+        slug: author.slug,
+      },
+      props: {
+        slug: author.slug,
+      },
+    };
+  });
+}
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const props = await getProps(slug);
+---
+
+<Layout
+  title={props.name}
+  description={`A sortable and filterable list of reviews of works by ${props.name}.`}
+>
+  <Author client:load {...props} />
+</Layout>
