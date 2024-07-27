@@ -1,0 +1,18 @@
+---
+import { Article } from "src/components/Article/Article";
+import { getProps } from "src/components/Article/getProps";
+import Layout from "src/layouts/Layout.astro";
+
+const props = await getProps({
+  slug: "gone",
+  alt: "Forget it, Jake. It's Chinatown.",
+});
+---
+
+<Layout
+  title="410: Gone"
+  description="Forget it, Jake. It's Chinatown."
+  article
+>
+  <Article {...props} />
+</Layout>

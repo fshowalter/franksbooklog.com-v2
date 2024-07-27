@@ -1,0 +1,29 @@
+{
+  "name": "Kathe Koja",
+  "sortName": "Koja, Kathe",
+  "slug": "kathe-koja",
+  "works": [
+    {
+      "title": "The Cipher",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "the-cipher-by-kathe-koja",
+      "sortTitle": "Cipher",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "kathe-koja",
+          "notes": null,
+          "name": "Kathe Koja",
+          "sortName": "Koja, Kathe"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

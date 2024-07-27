@@ -1,0 +1,35 @@
+{
+  "name": "David H. Hackworth",
+  "sortName": "Hackworth, David H.",
+  "slug": "david-h-hackworth",
+  "works": [
+    {
+      "title": "About Face",
+      "yearPublished": "1989",
+      "kind": "Nonfiction",
+      "slug": "about-face-by-david-h-hackworth-julie-sherman",
+      "sortTitle": "About Face: The Odyssey of an American Warrior",
+      "reviewed": true,
+      "grade": "A-",
+      "gradeValue": 11,
+      "authors": [
+        {
+          "slug": "david-h-hackworth",
+          "notes": null,
+          "name": "David H. Hackworth",
+          "sortName": "Hackworth, David H."
+        },
+        {
+          "slug": "julie-sherman",
+          "notes": null,
+          "name": "Julie Sherman",
+          "sortName": "Sherman, Julie"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

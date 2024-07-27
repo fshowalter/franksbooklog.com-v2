@@ -1,0 +1,36 @@
+---
+import { allStatYears } from "src/api/yearStats";
+import { getProps } from "src/components/YearStats/getProps";
+import { YearStats } from "src/components/YearStats/YearStats";
+import Layout from "src/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const statYears = await allStatYears();
+
+  return statYears.map((year) => {
+    return {
+      params: {
+        year: year,
+      },
+      props: {
+        year: year,
+      },
+    };
+  });
+}
+
+interface Props {
+  year: string;
+}
+
+const { year } = Astro.props;
+
+const props = await getProps(year);
+---
+
+<Layout
+  title={`${props.year} Stats`}
+  description={`My most-read authors and other stats for ${props.year}.`}
+>
+  <YearStats {...props} />
+</Layout>

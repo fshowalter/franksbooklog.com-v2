@@ -58,9 +58,6 @@ function Edition({
 }: {
   value: ReviewWithContent["readings"][0]["edition"];
 }) {
-  if (!value) {
-    return null;
-  }
   return (
     <span className="font-light text-muted">
       <span>via</span> <span>{value}</span>

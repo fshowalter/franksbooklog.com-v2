@@ -1,0 +1,115 @@
+{
+  "year": "2023",
+  "workCount": 10,
+  "bookCount": 8,
+  "kindDistribution": [
+    {
+      "name": "Nonfiction",
+      "count": 3
+    },
+    {
+      "name": "Novel",
+      "count": 5
+    },
+    {
+      "name": "Novella",
+      "count": 1
+    },
+    {
+      "name": "Short Story",
+      "count": 1
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Audible",
+      "count": 4
+    },
+    {
+      "name": "Kindle",
+      "count": 6
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "1970s",
+      "count": 1
+    },
+    {
+      "name": "1980s",
+      "count": 1
+    },
+    {
+      "name": "1990s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
+      "count": 3
+    },
+    {
+      "name": "2020s",
+      "count": 4
+    }
+  ],
+  "mostReadAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "count": 2,
+      "slug": "philip-fracassi",
+      "readings": [
+        {
+          "sequence": 53,
+          "date": "2023-10-09",
+          "slug": "sacculina-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novella",
+          "title": "Sacculina",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 55,
+          "date": "2023-10-29",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Don't Let Them Get You Down",
+          "yearPublished": "2022",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Stephen Morris",
+      "count": 2,
+      "slug": "stephen-morris",
+      "readings": [
+        {
+          "sequence": 57,
+          "date": "2023-11-11",
+          "slug": "record-play-pause-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Record Play Pause",
+          "yearPublished": "2019",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 58,
+          "date": "2023-12-09",
+          "slug": "fast-forward-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Fast Forward",
+          "yearPublished": "2020",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    }
+  ]
+}

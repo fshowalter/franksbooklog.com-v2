@@ -1,0 +1,86 @@
+{
+  "name": "Ian Fleming",
+  "sortName": "Fleming, Ian",
+  "slug": "ian-fleming",
+  "works": [
+    {
+      "title": "Casino Royale",
+      "yearPublished": "1953",
+      "kind": "Novel",
+      "slug": "casino-royale-by-ian-fleming",
+      "sortTitle": "Casino Royale",
+      "reviewed": true,
+      "grade": "B-",
+      "gradeValue": 8,
+      "authors": [
+        {
+          "slug": "ian-fleming",
+          "notes": null,
+          "name": "Ian Fleming",
+          "sortName": "Fleming, Ian"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Diamonds are Forever",
+      "yearPublished": "1956",
+      "kind": "Novel",
+      "slug": "diamonds-are-forever-by-ian-fleming",
+      "sortTitle": "Diamonds are Forever",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "ian-fleming",
+          "notes": null,
+          "name": "Ian Fleming",
+          "sortName": "Fleming, Ian"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Live and Let Die",
+      "yearPublished": "1954",
+      "kind": "Novel",
+      "slug": "live-and-let-die-by-ian-fleming",
+      "sortTitle": "Live and Let Die",
+      "reviewed": true,
+      "grade": "D",
+      "gradeValue": 3,
+      "authors": [
+        {
+          "slug": "ian-fleming",
+          "notes": null,
+          "name": "Ian Fleming",
+          "sortName": "Fleming, Ian"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Moonraker",
+      "yearPublished": "1955",
+      "kind": "Novel",
+      "slug": "moonraker-by-ian-fleming",
+      "sortTitle": "Moonraker",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "ian-fleming",
+          "notes": null,
+          "name": "Ian Fleming",
+          "sortName": "Fleming, Ian"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 3,
+  "workCount": 4,
+  "shelfWorkCount": 1
+}

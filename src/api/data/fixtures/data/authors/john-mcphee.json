@@ -1,0 +1,29 @@
+{
+  "name": "John McPhee",
+  "sortName": "McPhee, John",
+  "slug": "john-mcphee",
+  "works": [
+    {
+      "title": "Draft No. 4",
+      "yearPublished": "2013",
+      "kind": "Nonfiction",
+      "slug": "draft-no-4-by-john-mcphee",
+      "sortTitle": "Draft No. 4: On the Writing Process",
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
+      "authors": [
+        {
+          "slug": "john-mcphee",
+          "notes": null,
+          "name": "John McPhee",
+          "sortName": "McPhee, John"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

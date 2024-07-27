@@ -31,19 +31,15 @@ function formatDate(date: Date) {
 
 interface Value extends ReviewWithContent {
   moreReviews: MoreReviewsValue[];
-}
-
-export interface Props {
-  value: Value;
   coverImageData: CoverImageData;
   seoImageSrc: string;
 }
 
-export function Review({
-  value,
-  coverImageData,
-  seoImageSrc,
-}: Props): JSX.Element {
+export interface Props {
+  value: Value;
+}
+
+export function Review({ value }: Props): JSX.Element {
   return (
     <main id="top" className="flex flex-col items-center pt-6 desktop:pt-12">
       <header className="flex w-full flex-col items-center px-pageMargin">
@@ -53,11 +49,7 @@ export function Review({
         <div className="spacer-y-2 desktop:spacer-y-4" />
         <YearAndKind yearPublished={value.yearPublished} kind={value.kind} />
         <div className="spacer-y-8" />
-        <ReviewCover
-          coverImageData={coverImageData}
-          title={value.title}
-          authors={value.authors}
-        />
+        <ReviewCover coverImageData={value.coverImageData} />
         <div className="spacer-y-12" />
         <ReviewGrade value={value.grade} />
         <ReviewDate value={value.date} />
@@ -83,7 +75,7 @@ export function Review({
       <StructuredData
         title={value.title}
         grade={value.grade}
-        seoImageSrc={seoImageSrc}
+        seoImageSrc={value.seoImageSrc}
       />
     </main>
   );
@@ -141,19 +133,7 @@ function Authors({ values }: { values: ReviewWithContent["authors"] }) {
   );
 }
 
-function ReviewCover({
-  coverImageData,
-  title,
-  authors,
-}: {
-  coverImageData: CoverImageData;
-  title: ReviewWithContent["title"];
-  authors: ReviewWithContent["authors"];
-}) {
-  if (!coverImageData) {
-    return null;
-  }
-
+function ReviewCover({ coverImageData }: { coverImageData: CoverImageData }) {
   return (
     <div className="relative flex h-[340px] w-full max-w-popout flex-col items-center">
       <div className="cover-clip-path absolute inset-0 overflow-hidden">
@@ -171,8 +151,6 @@ function ReviewCover({
       <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
         <Cover
           imageData={coverImageData}
-          title={title}
-          authors={authors}
           width={CoverImageConfig.width}
           height={CoverImageConfig.height}
           loading={"eager"}

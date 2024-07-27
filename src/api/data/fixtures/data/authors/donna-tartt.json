@@ -1,0 +1,29 @@
+{
+  "name": "Donna Tartt",
+  "sortName": "Tartt, Donna",
+  "slug": "donna-tartt",
+  "works": [
+    {
+      "title": "The Secret History",
+      "yearPublished": "1992",
+      "kind": "Novel",
+      "slug": "the-secret-history-by-donna-tartt",
+      "sortTitle": "Secret History",
+      "reviewed": true,
+      "grade": "A",
+      "gradeValue": 12,
+      "authors": [
+        {
+          "slug": "donna-tartt",
+          "notes": null,
+          "name": "Donna Tartt",
+          "sortName": "Tartt, Donna"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

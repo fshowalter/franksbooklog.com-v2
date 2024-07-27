@@ -1,0 +1,29 @@
+{
+  "name": "Rick Rubin",
+  "sortName": "Rubin, Rick",
+  "slug": "rick-rubin",
+  "works": [
+    {
+      "title": "The Creative Act",
+      "yearPublished": "2023",
+      "kind": "Nonfiction",
+      "slug": "the-creative-act-by-rick-rubin",
+      "sortTitle": "Creative Act: A Way of Being",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "rick-rubin",
+          "notes": null,
+          "name": "Rick Rubin",
+          "sortName": "Rubin, Rick"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

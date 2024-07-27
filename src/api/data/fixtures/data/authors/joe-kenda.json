@@ -1,0 +1,29 @@
+{
+  "name": "Joe Kenda",
+  "sortName": "Kenda, Joe",
+  "slug": "joe-kenda",
+  "works": [
+    {
+      "title": "I Will Find You",
+      "yearPublished": "2017",
+      "kind": "Nonfiction",
+      "slug": "i-will-find-you-by-joe-kenda",
+      "sortTitle": "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "joe-kenda",
+          "notes": null,
+          "name": "Joe Kenda",
+          "sortName": "Kenda, Joe"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

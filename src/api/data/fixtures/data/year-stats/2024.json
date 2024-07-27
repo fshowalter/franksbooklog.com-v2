@@ -1,0 +1,32 @@
+{
+  "year": "2024",
+  "workCount": 2,
+  "bookCount": 2,
+  "kindDistribution": [
+    {
+      "name": "Nonfiction",
+      "count": 1
+    },
+    {
+      "name": "Novel",
+      "count": 1
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Audible",
+      "count": 1
+    },
+    {
+      "name": "Kindle",
+      "count": 1
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "2020s",
+      "count": 2
+    }
+  ],
+  "mostReadAuthors": []
+}

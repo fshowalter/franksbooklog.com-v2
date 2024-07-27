@@ -1,0 +1,29 @@
+{
+  "name": "Jesse Itzler",
+  "sortName": "Itzler, Jesse",
+  "slug": "jesse-itzler",
+  "works": [
+    {
+      "title": "Living with a SEAL",
+      "yearPublished": "2015",
+      "kind": "Nonfiction",
+      "slug": "living-with-a-seal-by-jesse-itzler",
+      "sortTitle": "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
+      "reviewed": true,
+      "grade": "Abandoned",
+      "gradeValue": 0,
+      "authors": [
+        {
+          "slug": "jesse-itzler",
+          "notes": null,
+          "name": "Jesse Itzler",
+          "sortName": "Itzler, Jesse"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

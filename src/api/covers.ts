@@ -86,7 +86,6 @@ async function getWorkCoverPathAndAltText(work: Work) {
   if (workCoverPath) {
     altText = altTextForWorkJson(
       worksJson.find((workJson) => {
-        console.log(workJson.slug);
         return workJson.slug === work.slug;
       })!,
     );
@@ -109,6 +108,26 @@ export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
     src: workCoverFile.default,
     width: 1200,
     height: 630,
+    format: "jpeg",
+    quality: 80,
+  });
+
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+    alt: altText,
+  };
+}
+
+export async function getFeedCover(work: Work): Promise<CoverImageData> {
+  const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
+
+  const workCoverFile = await images[workCoverPath]();
+
+  const optimizedImage = await getImage({
+    src: workCoverFile.default,
+    width: 500,
+    height: 750,
     format: "jpeg",
     quality: 80,
   });

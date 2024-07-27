@@ -1,0 +1,947 @@
+{
+  "name": "Stephen King",
+  "sortName": "King, Stephen",
+  "slug": "stephen-king",
+  "works": [
+    {
+      "title": "'Salem's Lot",
+      "yearPublished": "1975",
+      "kind": "Novel",
+      "slug": "salems-lot-by-stephen-king",
+      "sortTitle": "'Salem's Lot",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Apt Pupil",
+      "yearPublished": "1982",
+      "kind": "Novella",
+      "slug": "apt-pupil-by-stephen-king",
+      "sortTitle": "Apt Pupil",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Bag of Bones",
+      "yearPublished": "1998",
+      "kind": "Novel",
+      "slug": "bag-of-bones-by-stephen-king",
+      "sortTitle": "Bag of Bones",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Blind Willie",
+      "yearPublished": "1994",
+      "kind": "Novella",
+      "slug": "blind-willie-by-stephen-king",
+      "sortTitle": "Blind Willie",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Body",
+      "yearPublished": "1982",
+      "kind": "Novella",
+      "slug": "the-body-by-stephen-king",
+      "sortTitle": "Body",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Breathing Method",
+      "yearPublished": "1982",
+      "kind": "Novella",
+      "slug": "the-breathing-method-by-stephen-king",
+      "sortTitle": "Breathing Method",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Carrie",
+      "yearPublished": "1974",
+      "kind": "Novel",
+      "slug": "carrie-by-stephen-king",
+      "sortTitle": "Carrie",
+      "reviewed": true,
+      "grade": "B-",
+      "gradeValue": 8,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Christine",
+      "yearPublished": "1983",
+      "kind": "Novel",
+      "slug": "christine-by-stephen-king",
+      "sortTitle": "Christine",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Cujo",
+      "yearPublished": "1981",
+      "kind": "Novel",
+      "slug": "cujo-by-stephen-king",
+      "sortTitle": "Cujo",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Cycle of the Werewolf",
+      "yearPublished": "1985",
+      "kind": "Novel",
+      "slug": "cycle-of-the-werewolf-by-stephen-king",
+      "sortTitle": "Cycle of the Werewolf",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Dark Half",
+      "yearPublished": "1989",
+      "kind": "Novel",
+      "slug": "the-dark-half-by-stephen-king",
+      "sortTitle": "Dark Half",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Dead Zone",
+      "yearPublished": "1979",
+      "kind": "Novel",
+      "slug": "the-dead-zone-by-stephen-king",
+      "sortTitle": "Dead Zone",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Desperation",
+      "yearPublished": "1996",
+      "kind": "Novel",
+      "slug": "desperation-by-stephen-king",
+      "sortTitle": "Desperation",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Doctor Sleep",
+      "yearPublished": "2013",
+      "kind": "Novel",
+      "slug": "doctor-sleep-by-stephen-king",
+      "sortTitle": "Doctor Sleep",
+      "reviewed": true,
+      "grade": "C+",
+      "gradeValue": 7,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Dolores Claiborne",
+      "yearPublished": "1993",
+      "kind": "Novel",
+      "slug": "dolores-claiborne-by-stephen-king",
+      "sortTitle": "Dolores Claiborne",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Drawing of the Three",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "the-drawing-of-the-three-by-stephen-king",
+      "sortTitle": "Drawing of the Three",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Eyes of the Dragon",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "the-eyes-of-the-dragon-by-stephen-king",
+      "sortTitle": "Eyes of the Dragon",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Firestarter",
+      "yearPublished": "1980",
+      "kind": "Novel",
+      "slug": "firestarter-by-stephen-king",
+      "sortTitle": "Firestarter",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Gerald's Game",
+      "yearPublished": "1992",
+      "kind": "Novel",
+      "slug": "geralds-game-by-stephen-king",
+      "sortTitle": "Gerald's Game",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Girl Who Loved Tom Gordon",
+      "yearPublished": "1999",
+      "kind": "Novel",
+      "slug": "the-girl-who-loved-tom-gordon-by-stephen-king",
+      "sortTitle": "Girl Who Loved Tom Gordon",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Gunslinger",
+      "yearPublished": "1982",
+      "kind": "Novel",
+      "slug": "the-gunslinger-by-stephen-king",
+      "sortTitle": "Gunslinger",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Hearts in Atlantis",
+      "yearPublished": "1999",
+      "kind": "Novella",
+      "slug": "hearts-in-atlantis-by-stephen-king",
+      "sortTitle": "Hearts in Atlantis",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Heavenly Shades of Night Are Falling",
+      "yearPublished": "1999",
+      "kind": "Novella",
+      "slug": "heavenly-shades-of-night-are-falling-by-stephen-king",
+      "sortTitle": "Heavenly Shades of Night Are Falling",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Insomnia",
+      "yearPublished": "1994",
+      "kind": "Novel",
+      "slug": "insomnia-by-stephen-king",
+      "sortTitle": "Insomnia",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "It",
+      "yearPublished": "1986",
+      "kind": "Novel",
+      "slug": "it-by-stephen-king",
+      "sortTitle": "It",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Langoliers",
+      "yearPublished": "1990",
+      "kind": "Novella",
+      "slug": "the-langoliers-by-stephen-king",
+      "sortTitle": "Langoliers",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Library Policeman",
+      "yearPublished": "1990",
+      "kind": "Novel",
+      "slug": "the-library-policeman-by-stephen-king",
+      "sortTitle": "Library Policeman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Long Walk",
+      "yearPublished": "1978",
+      "kind": "Novel",
+      "slug": "the-long-walk-by-stephen-king",
+      "sortTitle": "Long Walk",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Low Men in Yellow Coats",
+      "yearPublished": "1999",
+      "kind": "Novella",
+      "slug": "low-men-in-yellow-coats-by-stephen-king",
+      "sortTitle": "Low Men in Yellow Coats",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Misery",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "misery-by-stephen-king",
+      "sortTitle": "Misery",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Mist",
+      "yearPublished": "1980",
+      "kind": "Novella",
+      "slug": "the-mist-by-stephen-king",
+      "sortTitle": "Mist",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Needful Things",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "needful-things-by-stephen-king",
+      "sortTitle": "Needful Things",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "On Writing",
+      "yearPublished": "2000",
+      "kind": "Nonfiction",
+      "slug": "on-writing-by-stephen-king",
+      "sortTitle": "On Writing",
+      "reviewed": true,
+      "grade": "A-",
+      "gradeValue": 11,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Rage",
+      "yearPublished": "1976",
+      "kind": "Novel",
+      "slug": "rage-by-stephen-king",
+      "sortTitle": "Rage",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Regulators",
+      "yearPublished": "1995",
+      "kind": "Novel",
+      "slug": "the-regulators-by-stephen-king",
+      "sortTitle": "Regulators",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Rita Hayworth and Shawshank Redemption",
+      "yearPublished": "1982",
+      "kind": "Novella",
+      "slug": "rita-hayworth-and-shawshank-redemption-by-stephen-king",
+      "sortTitle": "Rita Hayworth and Shawshank Redemption",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Roadwork",
+      "yearPublished": "1980",
+      "kind": "Novel",
+      "slug": "roadwork-by-stephen-king",
+      "sortTitle": "Roadwork",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Rose Madder",
+      "yearPublished": "1995",
+      "kind": "Novel",
+      "slug": "rose-madder-by-stephen-king",
+      "sortTitle": "Rose Madder",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Running Man",
+      "yearPublished": "1981",
+      "kind": "Novel",
+      "slug": "the-running-man-by-stephen-king",
+      "sortTitle": "Running Man",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Secret Window, Secret Garden",
+      "yearPublished": "1990",
+      "kind": "Novel",
+      "slug": "secret-window-secret-garden-by-stephen-king",
+      "sortTitle": "Secret Window, Secret Garden",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Shining",
+      "yearPublished": "1977",
+      "kind": "Novel",
+      "slug": "the-shining-by-stephen-king",
+      "sortTitle": "Shining",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Stand",
+      "yearPublished": "1978",
+      "kind": "Novel",
+      "slug": "the-stand-by-stephen-king",
+      "sortTitle": "Stand",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Sun Dog",
+      "yearPublished": "1990",
+      "kind": "Novella",
+      "slug": "the-sun-dog-by-stephen-king",
+      "sortTitle": "Sun Dog",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Talisman",
+      "yearPublished": "1984",
+      "kind": "Novel",
+      "slug": "the-talisman-by-stephen-king-peter-straub",
+      "sortTitle": "Talisman",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        },
+        {
+          "slug": "peter-straub",
+          "notes": null,
+          "name": "Peter Straub",
+          "sortName": "Straub, Peter"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Thinner",
+      "yearPublished": "1984",
+      "kind": "Novel",
+      "slug": "thinner-by-stephen-king",
+      "sortTitle": "Thinner",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Tommyknockers",
+      "yearPublished": "1987",
+      "kind": "Novel",
+      "slug": "the-tommyknockers-by-stephen-king",
+      "sortTitle": "Tommyknockers",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "The Waste Lands",
+      "yearPublished": "1991",
+      "kind": "Novel",
+      "slug": "the-waste-lands-by-stephen-king",
+      "sortTitle": "Waste Lands",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Why We're in Vietnam",
+      "yearPublished": "1999",
+      "kind": "Novella",
+      "slug": "why-were-in-vietnam-by-stephen-king",
+      "sortTitle": "Why We're in Vietnam",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "title": "Wizard and Glass",
+      "yearPublished": "1997",
+      "kind": "Novel",
+      "slug": "wizard-and-glass-by-stephen-king",
+      "sortTitle": "Wizard and Glass",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 5,
+  "workCount": 49,
+  "shelfWorkCount": 44
+}

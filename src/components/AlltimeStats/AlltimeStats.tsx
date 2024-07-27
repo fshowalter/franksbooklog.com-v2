@@ -10,7 +10,6 @@ import { StatsNavigation } from "src/components/StatsNavigation";
 import { Callouts } from "./Callouts";
 import { GradeDistribution } from "./GradeDistribution";
 
-type AlltimeStatsMostReadAuthor = AlltimeStats["mostReadAuthors"][number];
 type AlltimeStatsMostReadAuthorReading =
   AlltimeStats["mostReadAuthors"][number]["readings"][number];
 
@@ -18,7 +17,8 @@ interface MostReadAuthorReading extends AlltimeStatsMostReadAuthorReading {
   imageData: CoverImageData;
 }
 
-interface MostReadAuthor extends Omit<AlltimeStatsMostReadAuthor, "readings"> {
+interface MostReadAuthor
+  extends Omit<AlltimeStats["mostReadAuthors"][number], "readings"> {
   readings: MostReadAuthorReading[];
 }
 
@@ -44,7 +44,7 @@ export function AlltimeStats({ stats, distinctStatYears }: Props): JSX.Element {
           <StatsNavigation
             currentYear={"all"}
             linkFunc={(year: string) => {
-              return `/viewings/stats/${year}/`;
+              return `/readings/stats/${year}/`;
             }}
             years={distinctStatYears}
           />

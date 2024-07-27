@@ -27,6 +27,8 @@ export async function getProps(slug: string): Promise<Props> {
   return {
     value: {
       ...reviewWithContent,
+      seoImageSrc,
+      coverImageData,
       moreReviews: reviewWithContent.moreReviews.map((review) => {
         return {
           ...review,
@@ -34,7 +36,5 @@ export async function getProps(slug: string): Promise<Props> {
         };
       }),
     },
-    seoImageSrc,
-    coverImageData,
   };
 }

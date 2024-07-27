@@ -1,0 +1,29 @@
+{
+  "name": "Steven Novella",
+  "sortName": "Novella, Steven",
+  "slug": "steven-novella",
+  "works": [
+    {
+      "title": "The Skeptics' Guide to the Universe",
+      "yearPublished": "2018",
+      "kind": "Nonfiction",
+      "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+      "sortTitle": "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "steven-novella",
+          "notes": null,
+          "name": "Steven Novella",
+          "sortName": "Novella, Steven"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}

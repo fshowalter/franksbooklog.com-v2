@@ -5,7 +5,7 @@ export function Header({ shelfCount }: { shelfCount: number }): JSX.Element {
     <>
       <PageTitle className="text-center">The Shelf</PageTitle>
       <div className="spacer-y-2" />
-      <q className="block text-center text-subtle">
+      <q className="block px-gutter text-center text-subtle">
         Classic: A book which people praise and don’t read.
       </q>
       <div className="spacer-y-4" />
