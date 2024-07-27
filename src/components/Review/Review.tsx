@@ -92,7 +92,7 @@ function Title({
     <div className="text-center">
       <PageTitle>{title}</PageTitle>
       {subtitle && (
-        <div className="max-w-prose font-normal tracking-1px text-muted">
+        <div className="max-w-prose pt-2 font-normal tracking-1px text-muted">
           {subtitle}
         </div>
       )}
