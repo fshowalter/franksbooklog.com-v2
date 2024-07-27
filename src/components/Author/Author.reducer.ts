@@ -65,7 +65,7 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
   }
 }
 
-export interface State
+interface State
   extends FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>> {
   hideReviewed: boolean;
 }

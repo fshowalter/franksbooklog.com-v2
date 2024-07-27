@@ -67,11 +67,7 @@ function groupForValue(item: ListItemValue, sortValue: Sort): string {
   }
 }
 
-export type State = FilterableState<
-  ListItemValue,
-  Sort,
-  Map<string, ListItemValue[]>
->;
+type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 const SHOW_COUNT_DEFAULT = 100;
 

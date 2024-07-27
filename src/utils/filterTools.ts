@@ -77,7 +77,7 @@ function buildApplyFilters<T, S, G>(
   };
 }
 
-export function filterValues<T>({
+function filterValues<T>({
   values,
   filters,
 }: {

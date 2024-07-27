@@ -6,7 +6,7 @@ export async function allAuthors(): Promise<Author[]> {
   return await allAuthorsJson();
 }
 
-export interface AuthorDetails {
+interface AuthorDetails {
   author: Author;
   distinctKinds: string[];
   distinctPublishedYears: string[];

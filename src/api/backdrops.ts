@@ -13,7 +13,7 @@ interface Props {
   height: number;
 }
 
-export const images = import.meta.glob<{ default: ImageMetadata }>(
+const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/backdrops/*.png",
 );
 

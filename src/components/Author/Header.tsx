@@ -50,7 +50,7 @@ export function Header({
   );
 }
 
-export function Slug({
+function Slug({
   reviewedWorkCount,
   shelfWorkCount,
 }: {

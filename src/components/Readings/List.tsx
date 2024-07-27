@@ -98,7 +98,7 @@ function DateListItem({
   );
 }
 
-export function SubListItem({
+function SubListItem({
   value,
   imageData,
 }: {
@@ -150,7 +150,7 @@ function parseProgress(progress: string) {
   return 100;
 }
 
-export function TitleAndProgress({
+function TitleAndProgress({
   title,
   progress,
   reviewed,

@@ -20,7 +20,7 @@ const DataSchema = z.object({
   timeline: z.array(TimelineEntrySchema),
 });
 
-export type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
+type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
 export interface MarkdownReading {
   sequence: number;

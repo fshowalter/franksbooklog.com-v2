@@ -67,7 +67,7 @@ function groupValues(
   return groupedValues;
 }
 
-export type State = FilterableState<
+type State = FilterableState<
   ListItemValue,
   Sort,
   Map<string, Map<string, ListItemValue[]>>

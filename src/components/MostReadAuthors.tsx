@@ -18,7 +18,7 @@ interface ReadingSubListItemValue {
   reviewed: boolean;
 }
 
-export interface ListItemValue {
+interface ListItemValue {
   name: string;
   slug: string | null;
   count: number;
