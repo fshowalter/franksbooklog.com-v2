@@ -72,7 +72,7 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
     }
     case "grade-asc":
     case "grade-desc": {
-      return value.grade || "Abandoned";
+      return value.grade;
     }
     case "author-asc":
     case "author-desc": {

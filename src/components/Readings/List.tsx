@@ -40,7 +40,7 @@ export function List({
 }) {
   return (
     <GroupedList
-      data-testid="cover-list"
+      data-testid="list"
       groupedValues={groupedValues}
       visibleCount={visibleCount}
       totalCount={totalCount}
