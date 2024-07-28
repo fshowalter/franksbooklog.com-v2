@@ -23,7 +23,7 @@ function contentHmr() {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://www.franksmovielog.com",
+  site: "http://www.franksbooklog.com",
   trailingSlash: "always",
   vite: {
     optimizeDeps: {
