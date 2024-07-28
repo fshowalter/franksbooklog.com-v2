@@ -35,7 +35,7 @@ const props = await getProps(slug);
 <Layout
   title={`${props.value.title} by ${toSentenceArray(props.value.authors.map((author) => author.name)).join("")}`}
   description={`${textStarsForGrade(props.value.grade)} ${props.value.excerptPlainText ?? ""}`}
-  image={props.seoImageSrc}
+  image={props.value.seoImageSrc}
   article
 >
   <Review {...props} />
