@@ -22,14 +22,14 @@ const AuthorSchema = z.object({
   notes: z.nullable(z.string()),
 });
 
-const InclduedWorkAuthorSchema = z.object({
+const IncludedWorkAuthorSchema = z.object({
   name: z.string(),
   slug: z.string(),
 });
 
 const IncludedWorkSchema = z.object({
   title: z.string(),
-  authors: z.array(InclduedWorkAuthorSchema),
+  authors: z.array(IncludedWorkAuthorSchema),
   slug: z.string(),
   grade: z.string(),
 });
