@@ -1,5 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": ["src/pages/**/*.astro"],
-  "project": ["**/*", "!src/**/__mocks__/**"]
+  "project": ["**/*", "!src/**/__mocks__/**"],
+  "ignoreBinaries": ["sort"]
 }
