@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 interface Props {
   title: string;
@@ -11,7 +11,7 @@ export function ListItemTitle({ title, slug, className }: Props) {
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twJoin("block text-md leading-5 text-accent", className)}
+        className={twj("block text-md leading-5 text-accent", className)}
       >
         {title}
       </a>
@@ -19,8 +19,6 @@ export function ListItemTitle({ title, slug, className }: Props) {
   }
 
   return (
-    <span className={twJoin("block text-md leading-5", className)}>
-      {title}
-    </span>
+    <span className={twj("block text-md leading-5", className)}>{title}</span>
   );
 }

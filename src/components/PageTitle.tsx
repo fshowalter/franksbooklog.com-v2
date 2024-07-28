@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 export function PageTitle({
   children,
@@ -9,7 +9,7 @@ export function PageTitle({
 }): JSX.Element {
   return (
     <h1
-      className={twJoin(
+      className={twj(
         "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
         className,
       )}

@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import { twMerge } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
@@ -18,7 +18,7 @@ export function SelectField({
   className?: string;
 }): JSX.Element {
   return (
-    <label className={twMerge("flex flex-col", className)}>
+    <label className={twj("flex flex-col", className)}>
       <LabelText as="span" text={label} />
       <SelectInput value={value?.toString()} onChange={onChange}>
         {children}

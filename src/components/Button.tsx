@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 export function Button({
   onClick,
@@ -13,7 +13,7 @@ export function Button({
     <button
       type="button"
       onClick={onClick}
-      className={twJoin(
+      className={twj(
         "relative flex w-full max-w-lg cursor-pointer justify-center whitespace-nowrap rounded-3xl bg-subtle px-4 py-2 text-base leading-6 text-default shadow-all hover:shadow-accent",
         className,
       )}

@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 export function Fieldset({
   legend,
@@ -11,7 +11,7 @@ export function Fieldset({
 }): JSX.Element {
   return (
     <fieldset
-      className={twJoin(
+      className={twj(
         "rounded-md px-gutter pb-8 pt-6 text-subtle shadow-all",
         className,
       )}

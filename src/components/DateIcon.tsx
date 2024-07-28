@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 import SvgIcon from "./SvgIcon";
 /**
@@ -11,7 +11,7 @@ export function DateIcon({
   className?: string;
 }): JSX.Element {
   return (
-    <SvgIcon className={twJoin("mr-[1ch] min-h-4 min-w-4", className)}>
+    <SvgIcon className={twj("mr-[1ch] min-h-4 min-w-4", className)}>
       <title>Watched on</title>
       <path
         fillRule="evenodd"

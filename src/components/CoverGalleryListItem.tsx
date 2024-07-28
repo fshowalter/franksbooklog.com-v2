@@ -3,7 +3,7 @@ import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 import { Cover } from "./Cover";
 
@@ -34,8 +34,6 @@ export function CoverGalleryListItem({
       <Image
         slug={value.slug}
         imageData={value.imageData}
-        title={value.title}
-        authors={value.authors}
         className="min-w-20 max-w-20 shrink-0 tablet:max-w-poster"
       />
       <div className="tablet:spacer-y-2" />
@@ -83,7 +81,7 @@ function YearAndKind({
   if (kind) {
     return (
       <div
-        className={twJoin(
+        className={twj(
           "text-sm leading-4 tracking-0.5px text-subtle",
           className,
         )}
@@ -100,29 +98,20 @@ function YearAndKind({
 function Image({
   slug,
   imageData,
-  title,
-  authors,
   className,
 }: {
   slug: string | null | undefined;
   imageData: CoverImageData;
-  title: string;
-  authors: Author[];
   className?: string;
 }) {
   if (slug) {
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twJoin(
-          className,
-          "safari-border-radius-fix overflow-hidden",
-        )}
+        className={twj(className, "safari-border-radius-fix overflow-hidden")}
       >
         <Cover
           imageData={imageData}
-          title={title}
-          authors={authors}
           height={CoverGalleryListItemImageConfig.height}
           width={CoverGalleryListItemImageConfig.width}
           loading="lazy"
@@ -158,7 +147,7 @@ function Authors({
   }
 
   return (
-    <div className={twJoin("text-base leading-5 text-muted", className)}>
+    <div className={twj("text-base leading-5 text-muted", className)}>
       {toSentenceArray(values.map((author) => author.name))}
     </div>
   );

@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twj } from "src/utils/tailwindJoin";
 
 export function ListItem({
   children,
@@ -9,7 +9,7 @@ export function ListItem({
 }) {
   return (
     <li
-      className={twJoin(
+      className={twj(
         "flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:gap-x-6 tablet:px-6",
         className,
       )}
