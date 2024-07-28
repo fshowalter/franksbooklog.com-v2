@@ -1,54 +1,91 @@
-# Astro Starter Kit: Basics
+<p align="center">
+  <a href="https://www.franksbooklog.com">
+    <img alt="Frank's Book Log" src="https://www.franksbooklog.com/assets/default_og.jpg" width="500" />
+  </a>
+</p>
+<h1 align="center">
+  Frank's Book Log (v2)
+</h1>
 
-```sh
-npm create astro@latest -- --template basics
-```
+Source for www.franksbooklog.com. Built with [Astro](https://astro.build/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Setup
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1.  **Install nvm.**
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+    See [the instructions at the NVM repo](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-## 🚀 Project Structure
+1.  **Initialize your Node env.**
 
-Inside of your Astro project, you'll see the following folders and files:
+    An .nvmrc is included in the project.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+    ```shell
+    # use the .nvmrc version of Node.
+    nvm use
+    ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1.  **Install dependencies.**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+    NPM has come a long way and we don't need workspaces (yet)
 
-Any static assets, like images, can be placed in the `public/` directory.
+    ```shell
+    npm i
+    ```
 
-## 🧞 Commands
+1.  **Start a Dev server.**
 
-All commands are run from the root of the project, from a terminal:
+    ```shell
+    # start Astro dev.
+    npm run dev
+    ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1.  **Open the source code and start editing!**
 
-## 👀 Want to learn more?
+    The site is now running at `http://localhost:4321`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## What's inside?
+
+A quick look at the non-standard directories included in the project.
+
+    .
+    ├── content
+    ├── src/images
+    ├── src/styles
+    └── src/utils
+
+1.  **`/content`**: The book log content. Reviews and data copied from the backend system, as well as front-end specific assets like backdrops and covers. It also contains the content for the [how I grade](https://www.franksmovielog.com/how-i-grade/) page. We don't leverage Astro's content directory because I prefer keeping content and code separate.
+
+1.  **`/src/api`**: Functions to access the data in the `/content` folder. This replaces Gatsby's GraphQL layer. `/src/api/data` contains [Zod](https://zod.dev/) schemas to validate all the JSON and Markdown.
+
+1.  **`/src/utils`**: Shared utility functions.
+
+## Deployment
+
+Push to Github and Actions builds the project and POST's to Netlify.
+
+## What's new in v2?
+
+Gatsby's [deathbed status](https://github.com/gatsbyjs/gatsby/commits/master/) prompted me to migrate to a new framework. Losing Gatsby's GraphQL layer hurt (I still miss it) but the move means I can finally use ES modules and bump multiple dependencies (looking at you, [unified](https://github.com/unifiedjs/unified)).
+
+I also opted to prune as many dependencies as possible in the name of simplicity. Notably:
+
+- Tailwind instead of Vanilla Extract and Sprinkles. The big draw for Vanilla Extract was the ability to leverage Typescript to type the styles, but Tailwind now has an eslint plugin that covers this use case.
+
+- Vitest instead of Jest. Astro's built on Vite (which handles Typescript transpilation), so Vitest is a minimal add. Adding Jest would bring Babel into the mix.
+
+- Npm instead of Yarn. I still prefer Yarn's DX (having to type 'run' for every NPM script is annoying) but Yarn's recent change to how it resolved peer deps made me wary of its long-term stability. I don't need workspaces (yet) so NPM will do.
+
+### Some metrics
+
+Total distinct packages (i.e. name + version):
+
+| v1   | v2  |
+| ---- | --- |
+| 1800 | 963 |
+
+Source lines of code:
+
+| Language   | v1     | v2    |
+| ---------- | ------ | ----- |
+| Typescript | 40,362 | 7,269 |
+| Javascript | 186    | 260   |
